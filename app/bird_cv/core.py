@@ -21,3 +21,4 @@ def extract_count_of_birds_from_video(filepath, atributes = None) -> pd.DataFram
 
 print(extract_count_of_birds_from_video('static/birds.mp4'))
 
+#s
