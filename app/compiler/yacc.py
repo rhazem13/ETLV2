@@ -13,6 +13,7 @@ def p_empty(p):
 
 def p_error(p):
     print("Syntax error!")
+    print(p)
 
 
 
@@ -22,10 +23,10 @@ def p_error(p):
 #SELECT feature1,freature2 from c:\video.mp4 into c:\sharaf.csv
 def p_select(p):
     'select : SELECT distinct select_columns FROM DATASOURCE into where order limit SIMICOLON'
-
+    print('yacc satrt')
     if type(p[3]) == str:
         p[3] = "'" + p[3] + "'"
-
+    
     p[5] = str(p[5]).replace("\\", "\\\\")
     p[6] = str(p[6]).replace("\\", "\\\\")
     p[0] = (

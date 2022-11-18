@@ -1,6 +1,6 @@
 import pandas as pd
 import sqlalchemy
-
+from app.bird_cv.core import extract_count_of_birds_from_video 
 def __extract_from_csv(file_path) -> pd.DataFrame:
     data = pd.read_csv(file_path)
     return data
@@ -42,6 +42,6 @@ def __extract_from_excel(file_path) -> pd.DataFrame:
     return data
 
 def __extract_from_video(file_path) -> pd.DataFrame:
-    extract_video_attributes(file_path)
-
+    data = extract_count_of_birds_from_video(file_path)
     return data
+

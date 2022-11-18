@@ -9,7 +9,7 @@ class CVDetector(Thread):
         self.sentinel = sentinel
         self.MAX_NUM_BIRDS = 0
         self.path = path
-        self.birdsCascade = cv2.CascadeClassifier("static/birds1.xml")
+        self.birdsCascade = cv2.CascadeClassifier("C:\\Users\\rhaze\\Desktop\\Projects\\ETLV2\\app\\bird_cv\\static\\birds1.xml")
         self.cap = cap
         self.attrs = attrs
 
