@@ -50,7 +50,7 @@ Here is a diagram that helps you understand the flow of the app:
 
 
 ### Run and Installation
-1. Run `git clone https://github.com/MostafaAmin1299/ETL-Compiler.git` to get this repo.
+1. Run `git clone https://github.com/rhazem13/ETLV2` to get this repo.
 2. Run `pip install -r requirements.txt` to install the needed requirements.
 3. Run `python main.py` inside a shell inside the repo.
 
@@ -60,3 +60,35 @@ Here is a diagram that helps you understand the flow of the app:
 1. [PLY](http://www.dabeaz.com/ply/ply.html) (Python Lex-Yacc)
 2. [Pandas](https://pandas.pydata.org/docs/)
 3. [PyQT5](https://doc.bccnsoft.com/docs/PyQt5/)
+
+## What's new
+### Now the program can load a video(mp4) and then execute SELECT statement to select attributes from this video and write the results into any type (CSV, XML, JSON,....).
+### Here's an example:
+** select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4]; **
+** The output of the previous statement is showing below :**
+![image](https://user-images.githubusercontent.com/58918060/202856308-8b848bf6-4473-4955-9932-aa6308ca6845.png)
+
+# License
+MIT License
+
+Copyright (c) 2022 Hazem Ragab
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
