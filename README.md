@@ -64,9 +64,8 @@ Here is a diagram that helps you understand the flow of the app:
 # What's new
 ### Now the program can load a video(mp4) and then execute SELECT statement to select attributes from this video and write the results into any type (CSV, XML, JSON,....).
 ### Here's an example:
-**select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];**
+**▶️select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];**
 
-<mark  style="background-color: #FF0000"> **select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];** </mark>
 **The output of the previous statement is showing below :**
 
 
