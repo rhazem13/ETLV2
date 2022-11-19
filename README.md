@@ -61,11 +61,15 @@ Here is a diagram that helps you understand the flow of the app:
 2. [Pandas](https://pandas.pydata.org/docs/)
 3. [PyQT5](https://doc.bccnsoft.com/docs/PyQt5/)
 
-## What's new
+# What's new
 ### Now the program can load a video(mp4) and then execute SELECT statement to select attributes from this video and write the results into any type (CSV, XML, JSON,....).
 ### Here's an example:
-** select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4]; **
-** The output of the previous statement is showing below :**
+**select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];**
+
+
+**The output of the previous statement is showing below :**
+
+
 ![image](https://user-images.githubusercontent.com/58918060/202856308-8b848bf6-4473-4955-9932-aa6308ca6845.png)
 
 # License
