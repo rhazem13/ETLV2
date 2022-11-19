@@ -66,7 +66,7 @@ Here is a diagram that helps you understand the flow of the app:
 ### Here's an example:
 **select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];**
 
-<mark >**select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];**</mark>
+<mark  style="background-color: #FF0000"> **select * from [C:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\static\birds.mp4];** </mark>
 **The output of the previous statement is showing below :**
 
 
