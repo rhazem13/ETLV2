@@ -101,6 +101,7 @@ def t_NUMBER(t):
 @TOKEN(r'\[[^,\]\[]+\]')
 #@TOKEN(r'\[[^:\[\]]+::[^\]\[]+\]')
 def t_DATASOURCE(t):
+    print(t)
     t.value = str(t.value[1:-1])
     return t
 

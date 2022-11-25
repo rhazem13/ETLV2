@@ -7,6 +7,8 @@ def __extract_from_csv(file_path) -> pd.DataFrame:
 
     
 def __extract_from_sqlite(db_file_path, table_name) -> pd.DataFrame:
+    print(db_file_path)
+    print(table_name)
     sqlite_engine = sqlalchemy.create_engine(f'sqlite:///{db_file_path}')
     data = pd.read_sql(f'select * from {table_name}', sqlite_engine)
     return data
