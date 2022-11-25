@@ -4,6 +4,8 @@ from datetime import datetime
 import time
 from tabulate import tabulate
 
+
+
 def compile():
     try:
         query = str(ui.inputbox.text())
