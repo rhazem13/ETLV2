@@ -5,6 +5,29 @@ import re
 def __get_source_type(data_source:str) -> str:
     if data_source == 'CONSOLE':
         return 'CONSOL'
+    # elif data_source.split(':')[0]=='video':
+    #     print('video  detected')
+    #     return 'VIDEO'
+    # elif data_source.split(':')[0]=='csv':
+    #     print('csv  detected')
+    #     return 'CSV'
+    # elif data_source.split(':')[0]=='sqllite':
+    #     print('SQLITE  detected')
+    #     return 'SQLITE'
+    # elif data_source.split(':')[0]=='mssql':
+    #     print('MSSQL  detected')
+    #     return 'MSSQL'
+    # elif data_source.split(':')[0]=='html':
+    #     print('HTML  detected')
+    #     return 'HTML'
+    # elif data_source.split(':')[0]=='json':
+    #     print('JSON  detected')
+    #     return 'JSON'
+    # elif data_source.split(':')[0]=='xml':
+    #     print('xml detected')
+    #     return 'XML'
+    # elif data_source.split(':')[0]=='excel':
+    #     return 'EXCEL'
     elif re.search(r'.*\.csv(\.zip)?', data_source):   
         return 'CSV'
     elif re.search(r'.*\.db/\w+', data_source):
@@ -22,7 +45,7 @@ def __get_source_type(data_source:str) -> str:
     elif re.search( r'(.+\.xlsx)| (.+\.xls) | (.+\.xlsm)| (.+\.xlsb)| (.+\.odf)| (.+\.ods)| (.+\.odt)', data_source):   
         return 'EXCEL'
 
-
+# __get_source_type('video::sx')
 
 
 def __filter(data:pd.DataFrame, filters:dict) -> pd.DataFrame:

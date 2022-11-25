@@ -98,7 +98,8 @@ def t_NUMBER(t):
     return t
 
 
-@TOKEN(r'\[[^,\]\[]+\]')
+#@TOKEN(r'\[[^,\]\[]+\]')
+@TOKEN(r'\[[^:\[\]]+::[^\]\[]+\]')
 def t_DATASOURCE(t):
     t.value = str(t.value[1:-1])
     return t
