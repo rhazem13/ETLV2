@@ -13,7 +13,7 @@ def compile():
         result = parser.parse(query)
         ui.outputbox.setText(str(result))
     except Exception as e:
-        print("Compilation Error !!", e)
+        print("Compilation Error.", e)
 
 
 
