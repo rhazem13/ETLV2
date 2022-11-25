@@ -1,6 +1,5 @@
 from app.bird_cv.detector import CVDetector
 from app.bird_cv.reader import CVReader
-
 from queue import Queue
 import pandas as pd
 import cv2

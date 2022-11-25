@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets
-from app.gui.ui import Ui_SQLCompiler
+from app.Controllers.ui import Ui_SQLCompiler
 import sys
 
 app = QtWidgets.QApplication(sys.argv)
@@ -8,7 +8,7 @@ ui = Ui_SQLCompiler()
 ui.setupUi(MainWindow)
 
 # Connections
-from app.gui.controllers import compile, execute
+from app.Controllers.controllers import compile, execute
 ui.combilebtn.clicked.connect(compile)
 ui.excutebtn.clicked.connect(execute)
 
