@@ -2,13 +2,17 @@ import pandas as pd
 from app.etl.extract import __extract_from_csv,__extract_from_video, __extract_from_sqlite, __extract_from_mssql, __extract_from_html, __extract_from_json, __extract_from_xml, __extract_from_excel
 from app.etl.helpers import __get_source_type, __filter
 from app.etl.load import __load_to_csv, __load_to_sqlite, __load_to_mssql, __load_to_html, __load_to_json, __load_to_xml, __load_to_excel
-
-
+from app.etl.DataSources.factory import DataSourceFactory
+from app.etl.DataSources.IDataSource import IDataSource
 result = None
 
 
 def extract(data_source:str) -> pd.DataFrame:
-    source_type = __get_source_type(data_source)
+    file_path = data_source.split('::')[1]
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+    data = data_source.extract(file_path)
+    
+    """ source_type = __get_source_type(data_source)
     if source_type == 'CSV':
         data = __extract_from_csv(data_source)
     elif source_type == 'SQLITE':
@@ -28,7 +32,7 @@ def extract(data_source:str) -> pd.DataFrame:
     elif source_type == 'VIDEO' :
         data = __extract_from_video(data_source)
     else:
-        raise Exception(f'Unsupported data source')
+        raise Exception(f'Unsupported data source') """
     
     return data
 
