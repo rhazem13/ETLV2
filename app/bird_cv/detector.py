@@ -1,30 +1,31 @@
 import cv2
 import pandas as pd
 from threading import *
-
+import pathlib
+import os
 class CVDetector(Thread):
-    def __init__(self,cap, queue, path, sentinel, attrs):
+    def __init__(self,cap, queue, path, sem, sentinel, attrs):
         super().__init__()
         self.queue = queue
         self.sentinel = sentinel
         self.MAX_NUM_BIRDS = 0
         self.path = path
-        self.birdsCascade = cv2.CascadeClassifier("C:\\Users\\rhaze\\Desktop\\Projects\\ETLV2\\app\\bird_cv\\static\\birds1.xml")
+        self.birdsCascade = cv2.CascadeClassifier(path)
         self.cap = cap
         self.attrs = attrs
+        self.sem = sem
 
     def getStats(self):
         
         fps = self.cap.get(cv2.CAP_PROP_FPS)
         frame_count = int(self.cap.get(cv2.CAP_PROP_FRAME_COUNT))
         
-        #https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html
         codec = self.cap.get(cv2.CAP_PROP_FOURCC)
-        #total duraiton of video in milli seconds
         durationSec = frame_count/fps * 1000
         return (fps,frame_count,durationSec)
 
     def process(self):
+        self.sem.acquire()
         frame = self.queue.get()
         frames_count = self.getStats()[1]
         count = 0
@@ -50,6 +51,7 @@ class CVDetector(Thread):
         data = {str(self.MAX_NUM_BIRDS)}
         df = pd.DataFrame(data, columns=['MAX_COUNT_OF_BIRDS'])
         self.attrs['df'] = df
+        self.sem.release()
 
     def run(self):
         self.process()
