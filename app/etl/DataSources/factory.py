@@ -6,7 +6,7 @@ from app.etl.DataSources.Flatfile.Flatfile import Flatfile
 from app.etl.DataSources.Media.EMedia import EMedia
 
 
-class FileFactory():
+class DataSourceFactory():
     def __init__(self,data_source):
         self.Type=self.determineType(data_source)
         self.handlers={
