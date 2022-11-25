@@ -6,15 +6,20 @@ from app.etl.DataSources.IDataSource import IDataSource
 from app.etl.DataSources.Database.EDatabase import DatabaseType
 class Database(IDataSource):
     def __init__(self, type,connection_string) -> None:
+        # super().__init__(type)
         if(type==DatabaseType.MSSQL):
+            connection_string=connection_string.split('::')[1].split('/')
+            print (connection_string)
             self.engine = sqlalchemy.create_engine(f'mssql+pyodbc://{connection_string[0]}/{connection_string[1]}?trusted_connection=yes&driver=SQL+Server+Native+Client+11.0')
+            print(self.engine)
+            print('5555555555555555555555555555555555555555555555555555555')
             self.table_name=connection_string[2]
         elif(type==DatabaseType.SQLLITE):
             cs=connection_string.split('/')[0]
             self.engine = sqlalchemy.create_engine(f'sqlite:///{cs}')
             self.table_name=connection_string[1]
 
-        super().__init__(type)
+        
 
     def extract(self, file_path):
         data = pd.read_sql(f'select * from {self.table_name}', self.engine)
