@@ -11,29 +11,6 @@ def extract(data_source:str) -> pd.DataFrame:
     file_path = data_source.split('::')[1]
     data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
     data = data_source.extract(file_path)
-    
-    """ source_type = __get_source_type(data_source)
-    if source_type == 'CSV':
-        data = __extract_from_csv(data_source)
-    elif source_type == 'SQLITE':
-        db = data_source.split('/')[0]
-        table_name = data_source.split('/')[1]
-        data = __extract_from_sqlite(db, table_name)
-    elif source_type == 'MSSQL':
-        data = __extract_from_mssql(data_source)
-    elif source_type == 'HTML':
-        data = __extract_from_html(data_source)
-    elif source_type == 'JSON':
-        data = __extract_from_json(data_source)
-    elif source_type == 'XML':
-        data = __extract_from_xml(data_source)
-    elif source_type == 'EXCEL':
-        data = __extract_from_excel(data_source)
-    elif source_type == 'VIDEO' :
-        data = __extract_from_video(data_source)
-    else:
-        raise Exception(f'Unsupported data source') """
-    
     return data
 
 
@@ -66,32 +43,38 @@ def transform(data:pd.DataFrame, criteria:dict) -> pd.DataFrame:
 
 def load(data:pd.DataFrame, data_destination:str):
     global result
-    source_type = __get_source_type(data_destination)
-    if source_type == 'CSV':
-        __load_to_csv(data, data_destination)
-        result = 'Execution Done!'
-    elif source_type == 'SQLITE':
-        db_destination = data_destination.split('/')[0]
-        table_name = data_destination.split('/')[1]
-        __load_to_sqlite(data, db_destination, table_name)
-        result = 'Execution Done!'
-    elif source_type == 'MSSQL':
-        __load_to_mssql(data, data_destination)
-        result = 'Execution Done!'
-    elif source_type == 'HTML':
-        __load_to_html(data, data_destination)
-        result = 'Execution Done!'
-    elif source_type == 'JSON':
-        __load_to_json(data, data_destination)
-        result = 'Execution Done!'
-    elif source_type == 'XML':
-        __load_to_xml(data, data_destination)
-        result = 'Execution Done!'
-    elif source_type == 'EXCEL':
-        __load_to_excel(data, data_destination)
-        result = 'Execution Done!'
-    elif source_type == 'CONSOL':
-        result = data
-        # print(data)
-    else:
-        raise Exception(f'Unsupported data destination')
+    file_path = data_destination.split('::')[1]
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+    data = data_destination.load(data, file_path)
+    result= 'Excution Done!'
+    return data
+    # global result
+    # source_type = __get_source_type(data_destination)
+    # if source_type == 'CSV':
+    #     __load_to_csv(data, data_destination)
+    #     result = 'Execution Done!'
+    # elif source_type == 'SQLITE':
+    #     db_destination = data_destination.split('/')[0]
+    #     table_name = data_destination.split('/')[1]
+    #     __load_to_sqlite(data, db_destination, table_name)
+    #     result = 'Execution Done!'
+    # elif source_type == 'MSSQL':
+    #     __load_to_mssql(data, data_destination)
+    #     result = 'Execution Done!'
+    # elif source_type == 'HTML':
+    #     __load_to_html(data, data_destination)
+    #     result = 'Execution Done!'
+    # elif source_type == 'JSON':
+    #     __load_to_json(data, data_destination)
+    #     result = 'Execution Done!'
+    # elif source_type == 'XML':
+    #     __load_to_xml(data, data_destination)
+    #     result = 'Execution Done!'
+    # elif source_type == 'EXCEL':
+    #     __load_to_excel(data, data_destination)
+    #     result = 'Execution Done!'
+    # elif source_type == 'CONSOL':
+    #     result = data
+    #     # print(data)
+    # else:
+    #     raise Exception(f'Unsupported data destination')

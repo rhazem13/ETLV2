@@ -1,16 +1,15 @@
-from msilib.schema import Media
 from app.etl.DataSources.Database.Database import Database
 from app.etl.DataSources.Database.EDatabase import DatabaseType
 from app.etl.DataSources.Flatfile.EFlatfile import EFlatfile
 from app.etl.DataSources.Flatfile.Flatfile import Flatfile
 from app.etl.DataSources.Media.EMedia import EMedia
 from app.etl.DataSources.IDataSource import IDataSource
-
+from app.etl.DataSources.Media.Media import Media
 class DataSourceFactory():
 
     @classmethod
     def createDataSource(cls ,data_source) -> IDataSource:
-        Type=cls.determineType(data_source)
+        Type=cls._determineType(data_source)
         handlers={
             DatabaseType.MSSQL: Database(DatabaseType.MSSQL,data_source),
             DatabaseType.SQLLITE: Database(DatabaseType.SQLLITE,data_source),

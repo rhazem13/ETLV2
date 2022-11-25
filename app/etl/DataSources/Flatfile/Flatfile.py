@@ -5,22 +5,23 @@ class Flatfile(IDataSource):
     def __init__(self, type:EFlatfile) -> None:
         super().__init__(type)
         self.extractCallbacks = {
-            f'{EFlatfile.HTML}': (lambda path: pd.read_html(path)),
-            f'{EFlatfile.JSON}': (lambda path: pd.read_json(path)),
-            f'{EFlatfile.XML}': (lambda path: pd.read_xml(path)),
-            f'{EFlatfile.CSV}': (lambda path: pd.read_csv(path)),
-            f'{EFlatfile.EXCEL}': (lambda path: pd.read_excel(path))
+            EFlatfile.HTML: (lambda path: pd.read_html(path)),
+            EFlatfile.JSON: (lambda path: pd.read_json(path)),
+            EFlatfile.XML: (lambda path: pd.read_xml(path)),
+            EFlatfile.CSV: (lambda path: pd.read_csv(path)),
+            EFlatfile.EXCEL: (lambda path: pd.read_excel(path))
         }
         self.loadCallbacks = {
-            f'{EFlatfile.HTML}': (lambda data, path: data.to_html(path)),
-            f'{EFlatfile.JSON}': (lambda data,  path: data.to_json(path)),
-            f'{EFlatfile.XML}': (lambda data, path: data.to_xml(path)),
-            f'{EFlatfile.CSV}': (lambda data, path: data.to_csv(path)),
-            f'{EFlatfile.EXCEL}': (lambda data, path: data.to_excel(path))
+            EFlatfile.HTML: (lambda data, path: data.to_html(path)),
+            EFlatfile.JSON: (lambda data,  path: data.to_json(path)),
+            EFlatfile.XML: (lambda data, path: data.to_xml(path)),
+            EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+            EFlatfile.EXCEL: (lambda data, path: data.to_excel(path))
         }
 
-    def load(self, file_path):
-        self.callbacks[f'{self.type}'](file_path)
+    def load(self, data, file_path):
+        self.loadCallbacks[self.type](data,file_path)
 
     def extract(self, file_path):
-        self.callbacks[f'{self.type}'](file_path)
+        return self.extractCallbacks[self.type](file_path)
+        
