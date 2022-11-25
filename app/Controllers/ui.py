@@ -114,5 +114,5 @@ class Ui_SQLCompiler(object):
         self.combilebtn.setText(_translate("SQLCompiler", "COMPILE"))
         self.excutebtn.setText(_translate("SQLCompiler", "EXECUTE"))
         self.label_3.setText(_translate("SQLCompiler", "RESULTS"))
-import app.gui.resource_rc
+import app.Controllers.resource_rc
 
