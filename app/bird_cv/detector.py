@@ -3,6 +3,7 @@ import pandas as pd
 from threading import *
 import pathlib
 import os
+from BirdMoveDetect import BirdMoveDetect
 class CVDetector(Thread):
     def __init__(self,cap, queue, path, sem, sentinel, attrs):
         super().__init__()
@@ -32,14 +33,7 @@ class CVDetector(Thread):
         last_percent = 0
         while frame is not self.sentinel:
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            birds = self.birdsCascade.detectMultiScale(
-                gray,
-                scaleFactor=1.4,
-                minNeighbors=2,
-                #minSize=(10, 10),
-                maxSize=(30, 30),
-                flags = cv2.CASCADE_SCALE_IMAGE
-            )
+            birds = get
             if (len(birds)>=self.MAX_NUM_BIRDS):
                 self.MAX_NUM_BIRDS = len(birds)
             frame = self.queue.get()
