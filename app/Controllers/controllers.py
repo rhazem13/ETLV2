@@ -4,8 +4,6 @@ from datetime import datetime
 import time
 from tabulate import tabulate
 
-
-
 def compile():
     try:
         query = str(ui.inputbox.text())
@@ -14,6 +12,7 @@ def compile():
         ui.outputbox.setText(str(result))
     except Exception as e:
         print("Compilation Error !!", e)
+
 
 
 
