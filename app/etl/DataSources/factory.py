@@ -11,16 +11,16 @@ class DataSourceFactory():
     def createDataSource(cls ,data_source) -> IDataSource:
         Type=cls._determineType(data_source)
         handlers={
-            DatabaseType.MSSQL: Database(DatabaseType.MSSQL,data_source),
-            DatabaseType.SQLLITE: Database(DatabaseType.SQLLITE,data_source),
-            EFlatfile.JSON:Flatfile(EFlatfile.JSON,),
-            EFlatfile.HTML:Flatfile(EFlatfile.HTML),
-            EFlatfile.CSV:Flatfile(EFlatfile.CSV),
-            EFlatfile.EXCEL:Flatfile(EFlatfile.EXCEL),
-            EMedia.VIDEO:Media(EMedia.VIDEO),
-            EMedia.IMAGE:Media(EMedia.IMAGE)
+            DatabaseType.MSSQL: (lambda : Database(DatabaseType.MSSQL,data_source)),
+            DatabaseType.SQLLITE: (lambda : Database(DatabaseType.SQLLITE,data_source)),
+            EFlatfile.JSON:(lambda : Flatfile(EFlatfile.JSON,)),
+            EFlatfile.HTML:(lambda : Flatfile(EFlatfile.HTML)),
+            EFlatfile.CSV:(lambda : Flatfile(EFlatfile.CSV)),
+            EFlatfile.EXCEL:(lambda : Flatfile(EFlatfile.EXCEL)),
+            EMedia.VIDEO:(lambda : Media(EMedia.VIDEO)),
+            EMedia.IMAGE:(lambda : Media(EMedia.IMAGE))
         }
-        return handlers[Type]
+        return handlers[Type]()
     
     @classmethod
     def _determineType(cls,data_source):
