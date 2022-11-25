@@ -4,12 +4,14 @@ from app.etl.DataSources.Database.EDatabase import DatabaseType
 from app.etl.DataSources.Flatfile.EFlatfile import EFlatfile
 from app.etl.DataSources.Flatfile.Flatfile import Flatfile
 from app.etl.DataSources.Media.EMedia import EMedia
-
+from app.etl.DataSources.IDataSource import IDataSource
 
 class DataSourceFactory():
-    def __init__(self,data_source):
-        self.Type=self.determineType(data_source)
-        self.handlers={
+
+    @classmethod
+    def createDataSource(cls ,data_source) -> IDataSource:
+        Type=cls.determineType(data_source)
+        handlers={
             DatabaseType.MSSQL: Database(DatabaseType.MSSQL,data_source),
             DatabaseType.SQLLITE: Database(DatabaseType.SQLLITE,data_source),
             EFlatfile.JSON:Flatfile(EFlatfile.JSON,),
@@ -19,14 +21,10 @@ class DataSourceFactory():
             EMedia.VIDEO:Media(EMedia.VIDEO),
             EMedia.IMAGE:Media(EMedia.IMAGE)
         }
+        return handlers[Type]
     
-    #function esmha serialize btrg3 object
-    #instance mn el class el monasb
-
-    def serialize(self):
-        return self.handlers[self.Type]
-    
-    def determineType(self,data_source):
+    @classmethod
+    def _determineType(cls,data_source):
         T=data_source.split(':')[0]
         if(T=='mssql'):
             return DatabaseType.MSSQL

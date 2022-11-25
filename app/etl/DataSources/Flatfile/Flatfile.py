@@ -1,5 +1,5 @@
-from DataSources import IDataSource
-from Flatfile.EFlatfile import EFlatfile
+from app.etl.DataSources.IDataSource import IDataSource
+from app.etl.DataSources.Flatfile.EFlatfile import EFlatfile
 import pandas as pd
 class Flatfile(IDataSource):
     def __init__(self, type:EFlatfile) -> None:
@@ -14,9 +14,9 @@ class Flatfile(IDataSource):
         self.loadCallbacks = {
             f'{EFlatfile.HTML}': (lambda data, path: data.to_html(path)),
             f'{EFlatfile.JSON}': (lambda data,  path: data.to_json(path)),
-            f'{EFlatfile.XML}': (lambda path: pd.to_xml(path)),
-            f'{EFlatfile.CSV}': (lambda path: pd.read_csv(path)),
-            f'{EFlatfile.EXCEL}': (lambda path: pd.read_excel(path))
+            f'{EFlatfile.XML}': (lambda data, path: data.to_xml(path)),
+            f'{EFlatfile.CSV}': (lambda data, path: data.to_csv(path)),
+            f'{EFlatfile.EXCEL}': (lambda data, path: data.to_excel(path))
         }
 
     def load(self, file_path):

@@ -1,4 +1,4 @@
-from DataSources import IDataSource
+from app.etl.DataSources.IDataSource import IDataSource
 
 class Media(IDataSource):
     def __init__(self, type) -> None:

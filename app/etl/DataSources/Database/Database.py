@@ -2,7 +2,7 @@ import sqlalchemy
 import pandas as pd
 
 
-from DataSources import IDataSource
+from app.etl.DataSources.IDataSource import IDataSource
 from app.etl.DataSources.Database.EDatabase import DatabaseType
 class Database(IDataSource):
     def __init__(self, type,connection_string) -> None:
