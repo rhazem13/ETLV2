@@ -46,4 +46,4 @@ def execute():
             )
 
     except Exception as e:
-        print("Execution Error.", e)
+        print("Execution Error !!", e)
