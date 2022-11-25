@@ -10,9 +10,9 @@ class FileFactory():
     def __init__(self,data_source):
         self.Type=self.determineType(data_source)
         self.handlers={
-            DatabaseType.MSSQL: Database(DatabaseType.MSSQL),
-            DatabaseType.SQLLITE: Database(DatabaseType.SQLLITE),
-            EFlatfile.JSON:Flatfile(EFlatfile.JSON),
+            DatabaseType.MSSQL: Database(DatabaseType.MSSQL,data_source),
+            DatabaseType.SQLLITE: Database(DatabaseType.SQLLITE,data_source),
+            EFlatfile.JSON:Flatfile(EFlatfile.JSON,),
             EFlatfile.HTML:Flatfile(EFlatfile.HTML),
             EFlatfile.CSV:Flatfile(EFlatfile.CSV),
             EFlatfile.EXCEL:Flatfile(EFlatfile.EXCEL),
@@ -20,6 +20,11 @@ class FileFactory():
             EMedia.IMAGE:Media(EMedia.IMAGE)
         }
     
+    #function esmha serialize btrg3 object
+    #instance mn el class el monasb
+
+    def serialize(self):
+        return self.handlers[self.Type]
     
     def determineType(self,data_source):
         T=data_source.split(':')[0]
