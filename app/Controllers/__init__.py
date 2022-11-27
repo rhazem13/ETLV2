@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets
-from app.Controllers.ui import Ui_SQLCompiler
+from app.Views.ui import Ui_SQLCompiler
 import sys
 
 app = QtWidgets.QApplication(sys.argv)
