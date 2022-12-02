@@ -8,7 +8,12 @@ result = None
 def extract(data_source:str) -> pd.DataFrame:
     file_path = data_source.split('::')[1]
     data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+    # try: 
+    print(file_path)
     data = data_source.extract(file_path)
+    print("extract")
+    # except: 
+    #     return print("File Path not found")
     return data
 
 
