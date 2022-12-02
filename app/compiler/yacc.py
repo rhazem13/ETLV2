@@ -199,7 +199,7 @@ def p_into(p):
 
 def p_into_empty(p):
     'into : empty'
-    p[0] = 'CONSOLE'
+    p[0] = 'custom::'
 
 
 
