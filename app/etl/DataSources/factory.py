@@ -5,6 +5,8 @@ from app.etl.DataSources.Flatfile.Flatfile import Flatfile
 from app.etl.DataSources.Media.EMedia import EMedia
 from app.etl.DataSources.IDataSource import IDataSource
 from app.etl.DataSources.Media.Media import Media
+from app.etl.DataSources.Console.EConsole import EConsoleTypes
+from app.etl.DataSources.Console.Console import Console
 class DataSourceFactory():
 
     @classmethod
@@ -18,7 +20,9 @@ class DataSourceFactory():
             EFlatfile.CSV:(lambda : Flatfile(EFlatfile.CSV)),
             EFlatfile.EXCEL:(lambda : Flatfile(EFlatfile.EXCEL)),
             EMedia.VIDEO:(lambda : Media(EMedia.VIDEO)),
-            EMedia.IMAGE:(lambda : Media(EMedia.IMAGE))
+            EMedia.IMAGE:(lambda : Media(EMedia.IMAGE)),
+            EConsoleTypes.STDOUT:(lambda: Console(EConsoleTypes.STDOUT)),
+            EConsoleTypes.CUSTOM:(lambda: Console(EConsoleTypes.CUSTOM))
         }
         return handlers[Type]()
     
@@ -43,4 +47,9 @@ class DataSourceFactory():
             return EMedia.VIDEO
         elif(T=='img'):
             return EMedia.IMAGE
-    
+        elif (T == 'stdout'):
+            return EConsoleTypes.STDOUT
+        elif(T == 'custom'):
+            return EConsoleTypes.CUSTOM
+        else:
+            raise ValueError(T+" is not supported datasource type")
