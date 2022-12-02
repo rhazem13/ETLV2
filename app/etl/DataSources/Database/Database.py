@@ -10,18 +10,9 @@ class Database(IDataSource):
         if(type==DatabaseType.MSSQL):
             connection_string=connection_string.split('::')[1].split('/')
             self.engine = sqlalchemy.create_engine(f'mssql+pyodbc://{connection_string[0]}/{connection_string[1]}?trusted_connection=yes&driver=SQL+Server+Native+Client+11.0')
-            print(self.engine)
             self.table_name=connection_string[2]
         elif(type==DatabaseType.SQLLITE):
-            print(connection_string)
-            print(connection_string)
-            print(connection_string)
-            print(connection_string)
-            print(connection_string)
-            print(connection_string)
-            print(connection_string)
             cs=connection_string.split('::')[1].split('/')[0]
-            print(cs,cs,cs,cs,cs)
             self.engine = sqlalchemy.create_engine(f'sqlite:///{cs}')
             self.table_name=connection_string.split('::')[1].split('/')[1]
 
