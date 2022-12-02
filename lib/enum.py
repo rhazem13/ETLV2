@@ -1,23 +1,23 @@
 from enum import Enum
 
 
-class Head_Pose(Enum):
-    RIGHT = 1
-    CENTER = 2
-    LEFT = 3
+class EHead(Enum):
+    RIGHT = 'right'
+    CENTER = 'center'
+    LEFT = 'left'
 
 
-class Tail_Pose(Enum):
-    RIGHT = 1
-    CENTER = 2
-    LEFT = 3
+class ETail(Enum):
+    RIGHT = 'right'
+    CENTER = 'center'
+    LEFT = 'left'
 
 
-class Wing_Pose(Enum):
-    ON = 1
-    OFF = 2
+class EWing(Enum):
+    ON = 'on'
+    OFF = 'off'
 
 
-class Leg_Pose(Enum):
-    UP = 1
-    DOWN = 2
+class ELeg(Enum):
+    UP = 'up'
+    DOWN = 'down'
