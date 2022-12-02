@@ -6,7 +6,7 @@ import os
 
 
 class CVDetector(Thread):
-    def __init__(self, cap, queue, path, sem, sentinel, attrs):
+    def __init__(self,cap, queue, path, lock, sentinel, attrs):
         super().__init__()
         self.queue = queue
         self.sentinel = sentinel
@@ -15,7 +15,7 @@ class CVDetector(Thread):
         self.birdsCascade = cv2.CascadeClassifier(path)
         self.cap = cap
         self.attrs = attrs
-        self.sem = sem
+        self.lock = lock
 
     def get_pose(self, frame):
         # Return a list of dict
@@ -38,7 +38,6 @@ class CVDetector(Thread):
         return (fps, frame_count, durationSec)
 
     def process(self):
-        # self.sem.acquire()
         frame = self.queue.get()
         frames_count = self.getStats()[1]
         count = 0
@@ -64,7 +63,7 @@ class CVDetector(Thread):
         data = {str(self.MAX_NUM_BIRDS)}
         df = pd.DataFrame(data, columns=['MAX_COUNT_OF_BIRDS'])
         self.attrs['df'] = df
-        self.sem.release()
+        self.lock.release()
 
     def run(self):
         self.process()
