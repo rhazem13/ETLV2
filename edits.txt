@@ -1,0 +1,33 @@
+Replace document on github with file 2022 compiler project document on github
+El8y el @classmethod fe BirdMoveDetect. Py
+5leha pose bdl pos 
+ex. Headpose
+Head ya right ya center yaleft bdl el arkam fl pos
+Enum feh 3 etgahat 
+Head Left right center 
+Tail left right center
+Wing on off
+Leg up down
+Fe core. Py
+Bdl el str 22 m3 21 bta3 el sem
+F detector py
+Mt3ml4 acquire ll sem
+
+F media. Py
+7ot get pos fe detector. Py
+
+F birdcv/core 7ot el klam bta3 al core f class
+F detector. Py est5dm class bodykh
+
+F claas BirdMoveDetect def getcount
+
+
+Board notes
+Return a list of dict
+A dict for each bird in the frame
+If a frame contains one bird then the liat contains one dict
+[{H:R, Leg:up, T:L, w:on}] 
+If a frame contains two birds then the list contains two dict
+i.e
+[{H:L,leg:down, T:C, W:off}, 
+{H:c, leg:up, T:R, w:on}]
