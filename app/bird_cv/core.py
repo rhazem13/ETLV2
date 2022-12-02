@@ -18,6 +18,6 @@ def extract_count_of_birds_from_video(filepath, atributes=None) -> pd.DataFrame:
     cv_reader = CVReader(cap, queue, SENTINEL)
     cv_detector = CVDetector(cap, queue, cascade_path, sem, SENTINEL, attrs)
     cv_reader.start()
-    cv_detector.start()
     sem.acquire()
+    cv_detector.start()
     return attrs['df']

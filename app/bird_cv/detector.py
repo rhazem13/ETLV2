@@ -25,7 +25,7 @@ class CVDetector(Thread):
         return (fps,frame_count,durationSec)
 
     def process(self):
-        self.sem.acquire()
+        # self.sem.acquire()
         frame = self.queue.get()
         frames_count = self.getStats()[1]
         count = 0
