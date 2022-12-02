@@ -6,7 +6,7 @@ import cv2
 import pathlib
 import os
 import threading
-sem = threading.Semaphore(1)
+lock = threading.Semaphore(0)
 
 def extract_count_of_birds_from_video(filepath, atributes=None) -> pd.DataFrame:
     SENTINEL = object()
@@ -16,8 +16,8 @@ def extract_count_of_birds_from_video(filepath, atributes=None) -> pd.DataFrame:
     attrs = dict()
     cap = cv2.VideoCapture(filepath)
     cv_reader = CVReader(cap, queue, SENTINEL)
-    cv_detector = CVDetector(cap, queue, cascade_path, sem, SENTINEL, attrs)
+    cv_detector = CVDetector(cap, queue, cascade_path, lock, SENTINEL, attrs)
     cv_reader.start()
-    sem.acquire()
     cv_detector.start()
+    lock.acquire()
     return attrs['df']
