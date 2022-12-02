@@ -47,6 +47,7 @@ def load(data:pd.DataFrame, data_destination:str):
 
     file_path = data_destination.split('::')[1]
     data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
-    data = data_destination.load(data, file_path)
-    result= 'Excution Done!'
+    result = data_destination.load(data, file_path)
+    if result is None:
+        result = "Eexecution Done!"
     return data
