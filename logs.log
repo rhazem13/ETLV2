@@ -605,3 +605,5 @@ KeyError: 0
 2022-12-15 00:16:58 INFO     Load Data distination type is: Flatfile
 2022-12-15 00:22:48 INFO     Extract Data source type is: Media
 2022-12-15 00:22:48 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:25:08 INFO     Extract Data source type is: Media
+2022-12-15 00:25:08 INFO     Load Data distination type is: Flatfile
