@@ -41,7 +41,7 @@ def transform(data:pd.DataFrame, criteria:dict) -> pd.DataFrame:
 
 
 def load(data:pd.DataFrame, data_destination:str):
-    print(data)
+    # print(data)
     global result
     file_path = data_destination.split('::')[1]
     data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)

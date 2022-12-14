@@ -48,17 +48,20 @@ for key in set(dictionary) - set([1, 2, 3]):
         up = 1
         off = 0
         on = 1
-
-        changes_arr=[]
-
+        
+        # shrf=5
+        result={}
+        
         dict_pose_change = {head: False, leg: False, wing: False, tail: False}
         dict_pose_startTime = {head: 0.0, leg: 0.0, wing: 0.0, tail: 0.0}
         dict_pose_endTime = {head: 0.0, leg: 0.0, wing: 0.0, tail: 0.0}
         list_of_sorted_keys = list(sorted(dict_frame_time))
+        # print(dict_frame_time)
         for index, cur_time in enumerate(sorted(dict_frame_time)):
             if len(dict_frame_time) - index == 1:
                 break
             else:
+                result[cur_time]={}
                 frame_curr = dict_frame_time[cur_time]
                 time_next = list_of_sorted_keys[index + 1]
                 frame_next = dict_frame_time[time_next]
@@ -68,7 +71,8 @@ for key in set(dictionary) - set([1, 2, 3]):
                 # if there is a diff create a new obj that contain a time
                 # print((birds_next, birds_curr))
                 diff = self.get_difference(birds_curr, birds_next)
-                print(diff)
+                # print(diff)
+                
                 if diff != None:
                     for birdPart in diff.keys():
                         if not dict_pose_change[birdPart]:
@@ -78,10 +82,22 @@ for key in set(dictionary) - set([1, 2, 3]):
                             dict_pose_endTime[birdPart] = time_next
                             dict_pose_change[birdPart] = False
                             delta = dict_pose_endTime[birdPart] - dict_pose_startTime[birdPart]
-                            obj = ((dict_pose_startTime[birdPart], delta), birdPart)
+                            # obj = ((dict_pose_startTime[birdPart], delta), birdPart)
+                            result[cur_time][birdPart]=(dict_pose_startTime[birdPart], delta)
+                            
                             # print(obj)
-                            changes_arr.append(obj)
-        return changes_arr
+                            # changes_arr.append(obj)
+        
+                    # if(shrf>0):
+                    #     if(result[cur_time]!={}):
+                    #         print('5555555555555555555555555555')
+                    #         print(cur_time)
+                    #         print(result[cur_time])
+                    #         print('55555555555555555555555555555')
+                    #         shrf=shrf-1
+                        
+        # print(result[1])
+        return result
 
     def get_difference(self, first_dict, second_dict):
         '''

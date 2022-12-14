@@ -41,3 +41,567 @@ Traceback (most recent call last):
   File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
     newline="",
 FileNotFoundError: [Errno 2] No such file or directory: 'aaa'
+2022-12-14 23:16:39 INFO     Extract Data source type is: Media
+2022-12-14 23:16:39 INFO     Load Data distination type is: Flatfile
+2022-12-14 23:42:31 INFO     Extract Data source type is: Media
+2022-12-14 23:42:31 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:35 INFO     Extract Data source type is: Media
+2022-12-14 23:42:35 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:37 INFO     Extract Data source type is: Media
+2022-12-14 23:42:37 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:38 INFO     Extract Data source type is: Media
+2022-12-14 23:42:38 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:39 INFO     Extract Data source type is: Media
+2022-12-14 23:42:39 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:39 INFO     Extract Data source type is: Media
+2022-12-14 23:42:39 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:39 INFO     Extract Data source type is: Media
+2022-12-14 23:42:39 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:41 INFO     Extract Data source type is: Media
+2022-12-14 23:42:41 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:41 INFO     Extract Data source type is: Media
+2022-12-14 23:42:41 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:41 INFO     Extract Data source type is: Media
+2022-12-14 23:42:41 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:44 INFO     Extract Data source type is: Media
+2022-12-14 23:42:44 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:45 INFO     Extract Data source type is: Media
+2022-12-14 23:42:45 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:45 INFO     Extract Data source type is: Media
+2022-12-14 23:42:45 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:43:02 INFO     Extract Data source type is: Media
+2022-12-14 23:43:02 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:43:04 INFO     Extract Data source type is: Media
+2022-12-14 23:43:04 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:44:09 INFO     Extract Data source type is: Media
+2022-12-14 23:44:09 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:12 INFO     Extract Data source type is: Media
+2022-12-14 23:44:12 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:12 INFO     Extract Data source type is: Media
+2022-12-14 23:44:12 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:14 INFO     Extract Data source type is: Media
+2022-12-14 23:44:14 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:17 INFO     Extract Data source type is: Media
+2022-12-14 23:44:17 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:17 INFO     Extract Data source type is: Media
+2022-12-14 23:44:17 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:19 INFO     Extract Data source type is: Media
+2022-12-14 23:44:19 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:19 INFO     Extract Data source type is: Media
+2022-12-14 23:44:19 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:19 INFO     Extract Data source type is: Media
+2022-12-14 23:44:19 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:53 INFO     Extract Data source type is: Media
+2022-12-14 23:44:53 INFO     Load Data distination type is: Flatfile
+2022-12-14 23:59:49 INFO     Extract Data source type is: Media
+2022-12-14 23:59:50 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:05:30 INFO     Extract Data source type is: Media
+2022-12-15 00:05:30 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:34 INFO     Extract Data source type is: Media
+2022-12-15 00:05:34 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:36 INFO     Extract Data source type is: Media
+2022-12-15 00:05:36 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:37 INFO     Extract Data source type is: Media
+2022-12-15 00:05:37 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:37 INFO     Extract Data source type is: Media
+2022-12-15 00:05:37 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:38 INFO     Extract Data source type is: Media
+2022-12-15 00:05:38 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:42 INFO     Extract Data source type is: Media
+2022-12-15 00:05:42 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:55 INFO     Extract Data source type is: Media
+2022-12-15 00:05:55 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:07:41 INFO     Extract Data source type is: Media
+2022-12-15 00:07:41 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:08:48 INFO     Extract Data source type is: Media
+2022-12-15 00:08:49 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:11:12 INFO     Extract Data source type is: Media
+2022-12-15 00:11:13 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:11:48 INFO     Extract Data source type is: Media
+2022-12-15 00:11:48 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:13:25 INFO     Extract Data source type is: Media
+2022-12-15 00:13:26 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:16:58 INFO     Extract Data source type is: Media
+2022-12-15 00:16:58 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:22:48 INFO     Extract Data source type is: Media
+2022-12-15 00:22:48 INFO     Load Data distination type is: Flatfile
