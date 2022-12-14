@@ -36,5 +36,39 @@ class BirdMoveDetect:
 
     def get_changes(self, framesPath):
         motion = ClsMotion()
-        changes_arr = motion.process_frames(framesPath)
-        return pd.DataFrame(changes_arr)
+        changes_arr = motion.process_frames(framesPath) 
+        changes_converted = self.convert_to_pd(changes_arr)
+        #changes_converted = changes_converted.reset_index(drop=True)
+        return changes_converted
+
+    def convert_to_pd(self, bird_dict):
+        frames = []
+        for time, bird in bird_dict.items():
+            output_dict = dict()
+            output_dict['time'] = time
+            output_dict['head_movement'] = ''
+            output_dict['leg_movement'] = ''
+            output_dict['tail_movement'] = ''
+            output_dict['wing_movement'] = ''
+            if(0 in bird):
+                output_dict['head_movement'] = True
+                output_dict['head_movement_time_span'] = bird[0][0]
+                output_dict['head_movement_time_start'] = bird[0][1]
+
+            if(1 in bird):
+                output_dict['leg_movement'] = True
+                output_dict['leg_movement_time_span'] = bird[1][0]
+                output_dict['leg_movement_time_start'] = bird[1][1]
+
+            if(2 in bird):
+                output_dict['wing_movement'] = True
+                output_dict['wing_movement_time_span'] = bird[2][0]
+                output_dict['wing_movement_time_start'] = bird[2][1]
+
+            if(3 in bird):
+                output_dict['tail_movement'] = True
+                output_dict['tail_movement_time_span'] = bird[3][0]
+                output_dict['tail_movement_time_start'] = bird[3][1]
+
+            frames.append(output_dict)
+        return pd.DataFrame(frames)

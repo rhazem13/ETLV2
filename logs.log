@@ -607,3 +607,174 @@ KeyError: 0
 2022-12-15 00:22:48 INFO     Load Data distination type is: Flatfile
 2022-12-15 00:25:08 INFO     Extract Data source type is: Media
 2022-12-15 00:25:08 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:22:46 INFO     Extract Data source type is: Media
+2022-12-15 01:22:46 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:25:08 INFO     Extract Data source type is: Media
+2022-12-15 01:25:08 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:25:08 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:25:50 INFO     Extract Data source type is: Media
+2022-12-15 01:25:50 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:25:50 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:28:24 INFO     Extract Data source type is: Media
+2022-12-15 01:28:24 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:28:45 INFO     Extract Data source type is: Media
+2022-12-15 01:28:45 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:29:00 INFO     Extract Data source type is: Media
+2022-12-15 01:29:00 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:30:19 INFO     Extract Data source type is: Media
+2022-12-15 01:30:19 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:31:07 INFO     Extract Data source type is: Media
+2022-12-15 01:31:07 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 56, in convert_to_pd
+    output_dict['head_movement_time_start'] = bird['0'][1]
+KeyError: '0'
+2022-12-15 01:32:22 INFO     Extract Data source type is: Media
+2022-12-15 01:32:22 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:34:37 INFO     Extract Data source type is: Media
+2022-12-15 01:34:37 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:34:37 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:34:55 INFO     Extract Data source type is: Media
+2022-12-15 01:34:56 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:40:21 INFO     Extract Data source type is: Media
+2022-12-15 01:40:21 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:40:21 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:41:51 INFO     Extract Data source type is: Media
+2022-12-15 01:41:51 INFO     Load Data distination type is: Flatfile
