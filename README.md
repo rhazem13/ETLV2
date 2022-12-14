@@ -73,7 +73,7 @@ Here is a diagram that helps you understand the flow of the app:
 
 # Contributors
 - **Hazem Ragab Mohoamed**
-- **Sharaf Eldin Ashref Ahmed**
+- **Sharaf Eldin Ashraf Ahmed**
 - **Mo'men Ashraf Mohamed**
 - **Abdulrhman Khaled Hassan**
 - **Youssef Wael Elsayed**

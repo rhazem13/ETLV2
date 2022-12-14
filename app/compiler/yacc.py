@@ -1,4 +1,5 @@
-
+import logging
+compiler_logger = logging.getLogger('Compiler')
 start = 'start'
 def p_start(p):
     '''start : select 
@@ -14,6 +15,11 @@ def p_empty(p):
 def p_error(p):
     print("Syntax error!")
     print(p)
+    if(p is None):
+        compiler_logger.error('Unexpected end of file')
+    else:
+        compiler_logger.error(p)
+
 
 
 
