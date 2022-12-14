@@ -778,3 +778,5 @@ Traceback (most recent call last):
 PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
 2022-12-15 01:41:51 INFO     Extract Data source type is: Media
 2022-12-15 01:41:51 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:51:57 INFO     Extract Data source type is: Media
+2022-12-15 01:51:57 INFO     Load Data distination type is: Flatfile
