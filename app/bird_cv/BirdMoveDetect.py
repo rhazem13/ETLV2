@@ -1,7 +1,8 @@
 import cv2
 import pathlib
 import os
-
+from app.bird_cv.motionDetection.motion import ClsMotion
+import pandas as pd
 class BirdMoveDetect:
     def __init__(self):
         current_directory = pathlib.Path(__file__).parent.resolve()
@@ -32,3 +33,8 @@ class BirdMoveDetect:
             flags=cv2.CASCADE_SCALE_IMAGE
         )
         return len(birds)
+
+    def get_changes(self, framesPath):
+        motion = ClsMotion()
+        changes_arr = motion.process_frames(framesPath)
+        return pd.DataFrame(changes_arr)

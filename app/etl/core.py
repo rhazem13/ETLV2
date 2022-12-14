@@ -45,6 +45,7 @@ def transform(data:pd.DataFrame, criteria:dict) -> pd.DataFrame:
 
 
 def load(data:pd.DataFrame, data_destination:str):
+    print(data)
     global result
 
     file_path = data_destination.split('::')[1]
