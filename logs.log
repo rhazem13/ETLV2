@@ -1,0 +1,43 @@
+2022-12-14 00:15:25 ERROR    LexToken(COLNAME,'sadsa',1,0)
+2022-12-14 00:15:34 ERROR    ssss is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: ssss is not supported datasource type
+2022-12-14 00:16:37 ERROR    sss is not supported datasource type
+2022-12-14 00:20:44 INFO     Data source type is: Flatfile
+2022-12-14 00:20:44 ERROR    [Errno 2] No such file or directory: 'aaa'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 26, in extract
+    return self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 11, in <lambda>
+    EFlatfile.CSV: (lambda path: pd.read_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\parsers\readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\parsers\readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\parsers\readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\parsers\readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\parsers\base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'aaa'
