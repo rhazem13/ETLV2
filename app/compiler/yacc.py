@@ -35,6 +35,7 @@ def p_select(p):
     
     p[5] = str(p[5]).replace("\\", "\\\\")
     p[6] = str(p[6]).replace("\\", "\\\\")
+    datasource_type = p[5].split('::')[0]
     p[0] = (
         f"from app import etl\n"
         f"\n"
@@ -47,6 +48,7 @@ def p_select(p):
         f"        'FILTER':   {p[7]},\n"
         f"        'ORDER':    {p[8]},\n"
         f"        'LIMIT':    {p[9]},\n"
+        f"        'DATA_SOURCE_TYPE': '{datasource_type}',\n"
         f"    }}\n"
         f")\n"
         f"etl.load(data, '{p[6]}')\n"
