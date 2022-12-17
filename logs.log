@@ -1532,3 +1532,11 @@ SyntaxError: invalid syntax
 2022-12-17 20:50:56 INFO     Extract Data source type is: Media
 2022-12-17 20:50:56 INFO     Load Data distination type is: Console
 >>>>>>> e9cd1fe3976ea2d267c396d06b498c9cdfa6dfea
+2022-12-17 22:32:12 INFO     Extract Data source type is: Media
+2022-12-17 22:32:12 INFO     Load Data distination type is: Console
+2022-12-17 22:33:15 INFO     Extract Data source type is: Media
+2022-12-17 22:33:15 INFO     Load Data distination type is: Console
+2022-12-17 22:34:20 INFO     Extract Data source type is: Media
+2022-12-17 22:34:20 INFO     Load Data distination type is: Console
+2022-12-17 22:34:55 INFO     Extract Data source type is: Media
+2022-12-17 22:34:55 INFO     Load Data distination type is: Console
