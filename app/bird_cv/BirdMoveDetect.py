@@ -3,6 +3,8 @@ import pathlib
 import os
 from app.bird_cv.motionDetection.motion import ClsMotion
 import pandas as pd
+from numpy import nan
+
 class BirdMoveDetect:
     def __init__(self):
         current_directory = pathlib.Path(__file__).parent.resolve()
@@ -46,10 +48,10 @@ class BirdMoveDetect:
         for time, bird in bird_dict.items():
             output_dict = dict()
             output_dict['time'] = time
-            output_dict['head_movement'] = ''
-            output_dict['leg_movement'] = ''
-            output_dict['tail_movement'] = ''
-            output_dict['wing_movement'] = ''
+            output_dict['head_movement'] = nan
+            output_dict['leg_movement'] = nan
+            output_dict['tail_movement'] = nan
+            output_dict['wing_movement'] = nan
             if(0 in bird):
                 output_dict['head_movement'] = True
                 output_dict['head_movement_time_span'] = bird[0][0]
