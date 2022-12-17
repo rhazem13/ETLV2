@@ -1531,7 +1531,66 @@ SyntaxError: invalid syntax
 2022-12-17 20:47:03 INFO     Load Data distination type is: Console
 2022-12-17 20:50:56 INFO     Extract Data source type is: Media
 2022-12-17 20:50:56 INFO     Load Data distination type is: Console
+<<<<<<< HEAD
+2022-12-17 21:11:57 INFO     Extract Data source type is: Media
+2022-12-17 21:11:57 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:17:13 INFO     Extract Data source type is: Media
+2022-12-17 21:17:13 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 47, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 27, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-17 21:17:32 INFO     Extract Data source type is: Media
+2022-12-17 21:17:32 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 47, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 27, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-17 21:27:07 INFO     Extract Data source type is: Media
+2022-12-17 21:27:07 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:27:38 INFO     Extract Data source type is: Media
+2022-12-17 21:27:38 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:28:30 INFO     Extract Data source type is: Media
+2022-12-17 21:28:30 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:28:32 INFO     Extract Data source type is: Media
+2022-12-17 21:28:32 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:31:32 INFO     Extract Data source type is: Media
+2022-12-17 21:31:32 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:31:32 ERROR    [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\projects\\projectetl\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 3466, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\formats\csvs.py", line 237, in save
+    with get_handle(
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\common.py", line 702, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\projects\\projectetl\\etlv2\\results\\test.csv'
+2022-12-17 21:31:48 INFO     Extract Data source type is: Media
+2022-12-17 21:31:48 INFO     Load Data distination type is: Flatfile
+=======
 >>>>>>> e9cd1fe3976ea2d267c396d06b498c9cdfa6dfea
+<<<<<<< HEAD
 2022-12-17 22:32:12 INFO     Extract Data source type is: Media
 2022-12-17 22:32:12 INFO     Load Data distination type is: Console
 2022-12-17 22:33:15 INFO     Extract Data source type is: Media
@@ -1540,3 +1599,6 @@ SyntaxError: invalid syntax
 2022-12-17 22:34:20 INFO     Load Data distination type is: Console
 2022-12-17 22:34:55 INFO     Extract Data source type is: Media
 2022-12-17 22:34:55 INFO     Load Data distination type is: Console
+=======
+>>>>>>> c6188da3ec9cf188c7c6ce2aa387d0fdf815add8
+>>>>>>> 1fd2a7a1ea1d3e1de10cccaedf6ff510d5003ac3
