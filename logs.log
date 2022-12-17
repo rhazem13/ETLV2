@@ -1046,3 +1046,5 @@ PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
 2022-12-17 20:44:00 INFO     Load Data distination type is: Flatfile
 2022-12-17 20:47:03 INFO     Extract Data source type is: Media
 2022-12-17 20:47:03 INFO     Load Data distination type is: Console
+2022-12-17 20:50:56 INFO     Extract Data source type is: Media
+2022-12-17 20:50:56 INFO     Load Data distination type is: Console
