@@ -1613,3 +1613,7 @@ PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\proje
 =======
 >>>>>>> 1fd2a7a1ea1d3e1de10cccaedf6ff510d5003ac3
 >>>>>>> 6a3c56d6a0128b49cc1896d8d176d5bf320d8f42
+2022-12-17 22:39:18 INFO     Extract Data source type is: Media
+2022-12-17 22:39:18 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:40:41 INFO     Extract Data source type is: Media
+2022-12-17 22:40:41 INFO     Load Data distination type is: Flatfile
