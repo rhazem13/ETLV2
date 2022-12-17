@@ -41,7 +41,7 @@ def transform(data:pd.DataFrame, criteria:dict) -> pd.DataFrame:
         max_nans = len(data.columns) -1 if 'time' in data.columns or'__all__' not in['COLUMNS'] else len(data.columns)
         hightech_export= data.loc[data.isnull().sum(axis=1)<max_nans]
 
-    return hightech_export
+    return hightech_export.fillna('')
 
 
 
