@@ -1590,7 +1590,18 @@ PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\proje
 2022-12-17 21:31:48 INFO     Load Data distination type is: Flatfile
 =======
 >>>>>>> e9cd1fe3976ea2d267c396d06b498c9cdfa6dfea
+<<<<<<< HEAD
+2022-12-17 22:32:12 INFO     Extract Data source type is: Media
+2022-12-17 22:32:12 INFO     Load Data distination type is: Console
+2022-12-17 22:33:15 INFO     Extract Data source type is: Media
+2022-12-17 22:33:15 INFO     Load Data distination type is: Console
+2022-12-17 22:34:20 INFO     Extract Data source type is: Media
+2022-12-17 22:34:20 INFO     Load Data distination type is: Console
+2022-12-17 22:34:55 INFO     Extract Data source type is: Media
+2022-12-17 22:34:55 INFO     Load Data distination type is: Console
+=======
 >>>>>>> c6188da3ec9cf188c7c6ce2aa387d0fdf815add8
+<<<<<<< HEAD
 2022-12-17 22:27:49 INFO     Extract Data source type is: Media
 2022-12-17 22:27:49 INFO     Load Data distination type is: Flatfile
 2022-12-17 22:28:12 INFO     Extract Data source type is: Media
@@ -1599,3 +1610,6 @@ PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\proje
 2022-12-17 22:29:11 INFO     Load Data distination type is: Flatfile
 2022-12-17 22:31:42 INFO     Extract Data source type is: Media
 2022-12-17 22:31:42 INFO     Load Data distination type is: Flatfile
+=======
+>>>>>>> 1fd2a7a1ea1d3e1de10cccaedf6ff510d5003ac3
+>>>>>>> 6a3c56d6a0128b49cc1896d8d176d5bf320d8f42
