@@ -41,3 +41,1579 @@ Traceback (most recent call last):
   File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
     newline="",
 FileNotFoundError: [Errno 2] No such file or directory: 'aaa'
+2022-12-14 23:16:39 INFO     Extract Data source type is: Media
+2022-12-14 23:16:39 INFO     Load Data distination type is: Flatfile
+2022-12-14 23:42:31 INFO     Extract Data source type is: Media
+2022-12-14 23:42:31 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:35 INFO     Extract Data source type is: Media
+2022-12-14 23:42:35 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:37 INFO     Extract Data source type is: Media
+2022-12-14 23:42:37 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:38 INFO     Extract Data source type is: Media
+2022-12-14 23:42:38 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:39 INFO     Extract Data source type is: Media
+2022-12-14 23:42:39 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:39 INFO     Extract Data source type is: Media
+2022-12-14 23:42:39 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:39 INFO     Extract Data source type is: Media
+2022-12-14 23:42:39 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:41 INFO     Extract Data source type is: Media
+2022-12-14 23:42:41 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:41 INFO     Extract Data source type is: Media
+2022-12-14 23:42:41 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:41 INFO     Extract Data source type is: Media
+2022-12-14 23:42:41 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:44 INFO     Extract Data source type is: Media
+2022-12-14 23:42:44 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:45 INFO     Extract Data source type is: Media
+2022-12-14 23:42:45 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:42:45 INFO     Extract Data source type is: Media
+2022-12-14 23:42:45 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:43:02 INFO     Extract Data source type is: Media
+2022-12-14 23:43:02 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:43:04 INFO     Extract Data source type is: Media
+2022-12-14 23:43:04 ERROR    1.0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 82, in get_motion_per_time
+    result[dict_pose_startTime[birdPart]][birdPart]:delta
+KeyError: 1.0
+2022-12-14 23:44:09 INFO     Extract Data source type is: Media
+2022-12-14 23:44:09 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:12 INFO     Extract Data source type is: Media
+2022-12-14 23:44:12 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:12 INFO     Extract Data source type is: Media
+2022-12-14 23:44:12 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:14 INFO     Extract Data source type is: Media
+2022-12-14 23:44:14 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:17 INFO     Extract Data source type is: Media
+2022-12-14 23:44:17 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:17 INFO     Extract Data source type is: Media
+2022-12-14 23:44:17 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:19 INFO     Extract Data source type is: Media
+2022-12-14 23:44:19 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:19 INFO     Extract Data source type is: Media
+2022-12-14 23:44:19 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:19 INFO     Extract Data source type is: Media
+2022-12-14 23:44:19 ERROR    unhashable type: 'dict'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 52, in get_motion_per_time
+    result={{}}
+TypeError: unhashable type: 'dict'
+2022-12-14 23:44:53 INFO     Extract Data source type is: Media
+2022-12-14 23:44:53 INFO     Load Data distination type is: Flatfile
+2022-12-14 23:59:49 INFO     Extract Data source type is: Media
+2022-12-14 23:59:50 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:05:30 INFO     Extract Data source type is: Media
+2022-12-15 00:05:30 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:34 INFO     Extract Data source type is: Media
+2022-12-15 00:05:34 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:36 INFO     Extract Data source type is: Media
+2022-12-15 00:05:36 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:37 INFO     Extract Data source type is: Media
+2022-12-15 00:05:37 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:37 INFO     Extract Data source type is: Media
+2022-12-15 00:05:37 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:38 INFO     Extract Data source type is: Media
+2022-12-15 00:05:38 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:42 INFO     Extract Data source type is: Media
+2022-12-15 00:05:42 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:05:55 INFO     Extract Data source type is: Media
+2022-12-15 00:05:55 ERROR    0
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 25, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ETLV2\app\bird_cv\motionDetection\motion.py", line 86, in get_motion_per_time
+    print(result[0])
+KeyError: 0
+2022-12-15 00:07:41 INFO     Extract Data source type is: Media
+2022-12-15 00:07:41 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:08:48 INFO     Extract Data source type is: Media
+2022-12-15 00:08:49 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:11:12 INFO     Extract Data source type is: Media
+2022-12-15 00:11:13 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:11:48 INFO     Extract Data source type is: Media
+2022-12-15 00:11:48 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:13:25 INFO     Extract Data source type is: Media
+2022-12-15 00:13:26 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:16:58 INFO     Extract Data source type is: Media
+2022-12-15 00:16:58 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:22:48 INFO     Extract Data source type is: Media
+2022-12-15 00:22:48 INFO     Load Data distination type is: Flatfile
+2022-12-15 00:25:08 INFO     Extract Data source type is: Media
+2022-12-15 00:25:08 INFO     Load Data distination type is: Flatfile
+<<<<<<< HEAD
+2022-12-17 20:35:37 INFO     Extract Data source type is: Media
+2022-12-17 20:35:37 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:44 INFO     Extract Data source type is: Media
+2022-12-17 20:35:44 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:45 INFO     Extract Data source type is: Media
+2022-12-17 20:35:45 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:46 INFO     Extract Data source type is: Media
+2022-12-17 20:35:46 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:46 INFO     Extract Data source type is: Media
+2022-12-17 20:35:46 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:46 INFO     Extract Data source type is: Media
+2022-12-17 20:35:46 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:47 INFO     Extract Data source type is: Media
+2022-12-17 20:35:47 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:54 INFO     Extract Data source type is: Media
+2022-12-17 20:35:54 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:54 INFO     Extract Data source type is: Media
+2022-12-17 20:35:54 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:54 INFO     Extract Data source type is: Media
+2022-12-17 20:35:54 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:03 INFO     Extract Data source type is: Media
+2022-12-17 20:36:03 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:03 INFO     Extract Data source type is: Media
+2022-12-17 20:36:03 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:05 INFO     Extract Data source type is: Media
+2022-12-17 20:36:05 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:05 INFO     Extract Data source type is: Media
+2022-12-17 20:36:05 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:06 INFO     Extract Data source type is: Media
+2022-12-17 20:36:06 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:42 INFO     Extract Data source type is: Media
+2022-12-17 20:36:42 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:44 INFO     Extract Data source type is: Media
+2022-12-17 20:36:44 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:38:04 INFO     Extract Data source type is: Media
+2022-12-17 20:38:04 INFO     Load Data distination type is: Flatfile
+=======
+2022-12-15 01:22:46 INFO     Extract Data source type is: Media
+2022-12-15 01:22:46 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:25:08 INFO     Extract Data source type is: Media
+2022-12-15 01:25:08 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:25:08 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:25:50 INFO     Extract Data source type is: Media
+2022-12-15 01:25:50 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:25:50 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:28:24 INFO     Extract Data source type is: Media
+2022-12-15 01:28:24 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:28:45 INFO     Extract Data source type is: Media
+2022-12-15 01:28:45 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:29:00 INFO     Extract Data source type is: Media
+2022-12-15 01:29:00 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:30:19 INFO     Extract Data source type is: Media
+2022-12-15 01:30:19 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 55, in convert_to_pd
+    output_dict['head_movement_time_span'] = bird['0'][0]
+KeyError: '0'
+2022-12-15 01:31:07 INFO     Extract Data source type is: Media
+2022-12-15 01:31:07 ERROR    '0'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 40, in get_changes
+    changes_converted = self.convert_to_pd(changes_arr)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 56, in convert_to_pd
+    output_dict['head_movement_time_start'] = bird['0'][1]
+KeyError: '0'
+2022-12-15 01:32:22 INFO     Extract Data source type is: Media
+2022-12-15 01:32:22 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:34:37 INFO     Extract Data source type is: Media
+2022-12-15 01:34:37 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:34:37 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:34:55 INFO     Extract Data source type is: Media
+2022-12-15 01:34:56 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:40:21 INFO     Extract Data source type is: Media
+2022-12-15 01:40:21 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:40:21 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\test.csv'
+2022-12-15 01:41:51 INFO     Extract Data source type is: Media
+2022-12-15 01:41:51 INFO     Load Data distination type is: Flatfile
+2022-12-15 01:51:57 INFO     Extract Data source type is: Media
+2022-12-15 01:51:57 INFO     Load Data distination type is: Flatfile
+<<<<<<< HEAD
+2022-12-17 21:19:16 INFO     Extract Data source type is: Media
+2022-12-17 21:19:17 ERROR    list index out of range
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motion.py", line 16, in process_frames
+    frame_time = float(frame_second[0])
+IndexError: list index out of range
+2022-12-17 21:19:28 INFO     Extract Data source type is: Media
+2022-12-17 21:19:29 INFO     Load Data distination type is: Console
+2022-12-17 21:19:58 INFO     Extract Data source type is: Media
+2022-12-17 21:19:58 INFO     Load Data distination type is: Console
+2022-12-17 21:20:16 INFO     Extract Data source type is: Media
+2022-12-17 21:20:16 INFO     Load Data distination type is: Console
+2022-12-17 21:20:29 INFO     Extract Data source type is: Media
+2022-12-17 21:20:29 INFO     Load Data distination type is: Console
+2022-12-17 21:21:32 INFO     Extract Data source type is: Media
+2022-12-17 21:21:32 INFO     Load Data distination type is: Console
+2022-12-17 21:24:27 INFO     Extract Data source type is: Media
+2022-12-17 21:24:27 INFO     Load Data distination type is: Console
+2022-12-17 21:40:25 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:36 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:38 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:44 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:44 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:45 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:45 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:40:46 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:05 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:08 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:08 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:09 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:09 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:09 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:09 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:14 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:20 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:27 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:31 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:31 ERROR    videos is not supported datasource type
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 10, in extract
+    data_source:IDataSource = DataSourceFactory.createDataSource(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 14, in createDataSource
+    Type=cls._determineType(data_source)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\factory.py", line 55, in _determineType
+    raise ValueError(T+" is not supported datasource type")
+ValueError: videos is not supported datasource type
+2022-12-17 21:41:35 INFO     Extract Data source type is: Media
+2022-12-17 21:41:35 INFO     Load Data distination type is: Console
+2022-12-17 21:42:09 INFO     Extract Data source type is: Media
+2022-12-17 21:42:09 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:11 INFO     Extract Data source type is: Media
+2022-12-17 21:42:11 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:18 INFO     Extract Data source type is: Media
+2022-12-17 21:42:18 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:18 INFO     Extract Data source type is: Media
+2022-12-17 21:42:18 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:18 INFO     Extract Data source type is: Media
+2022-12-17 21:42:18 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:18 INFO     Extract Data source type is: Media
+2022-12-17 21:42:18 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:19 INFO     Extract Data source type is: Media
+2022-12-17 21:42:19 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:19 INFO     Extract Data source type is: Media
+2022-12-17 21:42:19 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:42:43 INFO     Extract Data source type is: Media
+2022-12-17 21:42:43 INFO     Load Data distination type is: Console
+2022-12-17 21:43:26 INFO     Extract Data source type is: Media
+2022-12-17 21:43:26 INFO     Load Data distination type is: Console
+2022-12-17 21:43:59 INFO     Extract Data source type is: Media
+2022-12-17 21:43:59 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 42, in transform
+    print(hightech_export)
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-17 21:44:27 INFO     Extract Data source type is: Media
+2022-12-17 21:44:27 INFO     Load Data distination type is: Console
+2022-12-17 21:46:30 INFO     Extract Data source type is: Media
+2022-12-17 21:46:30 INFO     Load Data distination type is: Console
+2022-12-17 21:47:22 INFO     Extract Data source type is: Media
+2022-12-17 21:47:22 INFO     Load Data distination type is: Console
+2022-12-17 21:52:23 INFO     Extract Data source type is: Media
+2022-12-17 21:52:23 INFO     Load Data distination type is: Console
+2022-12-17 21:52:51 INFO     Extract Data source type is: Media
+2022-12-17 21:52:51 INFO     Load Data distination type is: Console
+2022-12-17 21:54:11 INFO     Extract Data source type is: Media
+2022-12-17 21:54:11 INFO     Load Data distination type is: Console
+2022-12-17 21:56:13 INFO     Extract Data source type is: Media
+2022-12-17 21:56:13 INFO     Load Data distination type is: Console
+2022-12-17 21:58:24 INFO     Extract Data source type is: Media
+2022-12-17 21:58:24 INFO     Load Data distination type is: Console
+2022-12-17 21:58:24 ERROR    boolean value of NA is ambiguous
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 44, in execute
+    table = tabulate(core.result, headers=core.result.keys())
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\tabulate\__init__.py", line 2049, in tabulate
+    tabular_data, headers, showindex=showindex
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\tabulate\__init__.py", line 1471, in _normalize_tabular_data
+    rows = list(map(lambda r: r if _is_separating_line(r) else list(r), rows))
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\tabulate\__init__.py", line 1471, in <lambda>
+    rows = list(map(lambda r: r if _is_separating_line(r) else list(r), rows))
+  File "pandas\_libs\missing.pyx", line 446, in pandas._libs.missing.NAType.__bool__
+TypeError: boolean value of NA is ambiguous
+2022-12-17 21:59:16 INFO     Extract Data source type is: Media
+2022-12-17 21:59:17 INFO     Load Data distination type is: Console
+2022-12-17 21:59:50 INFO     Extract Data source type is: Media
+2022-12-17 21:59:51 INFO     Load Data distination type is: Console
+2022-12-17 22:00:26 INFO     Extract Data source type is: Media
+2022-12-17 22:00:26 INFO     Load Data distination type is: Console
+2022-12-17 22:01:02 INFO     Extract Data source type is: Media
+2022-12-17 22:01:02 INFO     Load Data distination type is: Console
+2022-12-17 22:01:40 INFO     Extract Data source type is: Media
+2022-12-17 22:01:40 INFO     Load Data distination type is: Console
+2022-12-17 22:02:08 INFO     Extract Data source type is: Media
+2022-12-17 22:02:08 INFO     Load Data distination type is: Console
+2022-12-17 22:02:50 INFO     Extract Data source type is: Media
+2022-12-17 22:02:50 INFO     Load Data distination type is: Console
+2022-12-17 22:03:09 INFO     Extract Data source type is: Media
+2022-12-17 22:03:09 INFO     Load Data distination type is: Console
+2022-12-17 22:03:27 INFO     Extract Data source type is: Media
+2022-12-17 22:03:27 ERROR    Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 40, in transform
+    hightech_export= data.loc[data.isnull().sum(axis=0)<=1 ]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 931, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 1144, in _getitem_axis
+    return self._getbool_axis(key, axis=axis)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 948, in _getbool_axis
+    key = check_bool_indexer(labels, key)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 2389, in check_bool_indexer
+    "Unalignable boolean Series provided as "
+pandas.core.indexing.IndexingError: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+2022-12-17 22:03:30 INFO     Extract Data source type is: Media
+2022-12-17 22:03:30 ERROR    Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 40, in transform
+    hightech_export= data.loc[data.isnull().sum(axis=0)<=1 ]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 931, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 1144, in _getitem_axis
+    return self._getbool_axis(key, axis=axis)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 948, in _getbool_axis
+    key = check_bool_indexer(labels, key)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 2389, in check_bool_indexer
+    "Unalignable boolean Series provided as "
+pandas.core.indexing.IndexingError: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+2022-12-17 22:05:18 INFO     Extract Data source type is: Media
+2022-12-17 22:05:18 ERROR    Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 11, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 40, in transform
+    hightech_export= data.loc[data.isnull().sum()<=1 ]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 931, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 1144, in _getitem_axis
+    return self._getbool_axis(key, axis=axis)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 948, in _getbool_axis
+    key = check_bool_indexer(labels, key)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexing.py", line 2389, in check_bool_indexer
+    "Unalignable boolean Series provided as "
+pandas.core.indexing.IndexingError: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+2022-12-17 22:07:07 INFO     Extract Data source type is: Media
+2022-12-17 22:07:07 INFO     Load Data distination type is: Console
+2022-12-17 22:17:24 ERROR    EOL while scanning string literal (<string>, line 12)
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 12
+    'DATA_SOURCE_TYPE: video,
+                            ^
+SyntaxError: EOL while scanning string literal
+2022-12-17 22:18:15 ERROR    invalid syntax (<string>, line 12)
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 12
+    'DATA_SOURCE_TYPE: 'video',
+                            ^
+SyntaxError: invalid syntax
+2022-12-17 22:19:40 INFO     Extract Data source type is: Media
+2022-12-17 22:19:40 INFO     Load Data distination type is: Console
+2022-12-17 22:21:29 INFO     Extract Data source type is: Media
+2022-12-17 22:21:29 INFO     Load Data distination type is: Console
+2022-12-17 22:22:17 INFO     Extract Data source type is: Media
+2022-12-17 22:22:18 INFO     Load Data distination type is: Console
+2022-12-17 22:23:27 INFO     Extract Data source type is: Media
+2022-12-17 22:23:27 INFO     Load Data distination type is: Console
+2022-12-17 22:24:15 INFO     Extract Data source type is: Media
+2022-12-17 22:24:15 INFO     Load Data distination type is: Console
+2022-12-17 22:24:40 INFO     Extract Data source type is: Media
+2022-12-17 22:24:41 INFO     Load Data distination type is: Console
+2022-12-17 22:25:15 INFO     Extract Data source type is: Media
+2022-12-17 22:25:15 INFO     Load Data distination type is: Console
+=======
+>>>>>>> 628903c8cc1e16e58331b5b08136ecc04668855f
+2022-12-17 20:43:58 INFO     Extract Data source type is: Media
+2022-12-17 20:43:58 INFO     Load Data distination type is: Flatfile
+2022-12-17 20:44:00 INFO     Extract Data source type is: Media
+2022-12-17 20:44:00 INFO     Load Data distination type is: Flatfile
+2022-12-17 20:47:03 INFO     Extract Data source type is: Media
+2022-12-17 20:47:03 INFO     Load Data distination type is: Console
+2022-12-17 20:50:56 INFO     Extract Data source type is: Media
+2022-12-17 20:50:56 INFO     Load Data distination type is: Console
+<<<<<<< HEAD
+2022-12-17 21:11:57 INFO     Extract Data source type is: Media
+2022-12-17 21:11:57 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:17:13 INFO     Extract Data source type is: Media
+2022-12-17 21:17:13 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 47, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 27, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-17 21:17:32 INFO     Extract Data source type is: Media
+2022-12-17 21:17:32 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 47, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 27, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-17 21:27:07 INFO     Extract Data source type is: Media
+2022-12-17 21:27:07 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:27:38 INFO     Extract Data source type is: Media
+2022-12-17 21:27:38 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:28:30 INFO     Extract Data source type is: Media
+2022-12-17 21:28:30 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:28:32 INFO     Extract Data source type is: Media
+2022-12-17 21:28:32 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:31:32 INFO     Extract Data source type is: Media
+2022-12-17 21:31:32 INFO     Load Data distination type is: Flatfile
+2022-12-17 21:31:32 ERROR    [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\projects\\projectetl\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 14, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 49, in load
+    result = data_destination.load(data, file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 3466, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\formats\csvs.py", line 237, in save
+    with get_handle(
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\common.py", line 702, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\projects\\projectetl\\etlv2\\results\\test.csv'
+2022-12-17 21:31:48 INFO     Extract Data source type is: Media
+2022-12-17 21:31:48 INFO     Load Data distination type is: Flatfile
+=======
+>>>>>>> e9cd1fe3976ea2d267c396d06b498c9cdfa6dfea
+<<<<<<< HEAD
+2022-12-17 22:32:12 INFO     Extract Data source type is: Media
+2022-12-17 22:32:12 INFO     Load Data distination type is: Console
+2022-12-17 22:33:15 INFO     Extract Data source type is: Media
+2022-12-17 22:33:15 INFO     Load Data distination type is: Console
+2022-12-17 22:34:20 INFO     Extract Data source type is: Media
+2022-12-17 22:34:20 INFO     Load Data distination type is: Console
+2022-12-17 22:34:55 INFO     Extract Data source type is: Media
+2022-12-17 22:34:55 INFO     Load Data distination type is: Console
+=======
+>>>>>>> c6188da3ec9cf188c7c6ce2aa387d0fdf815add8
+<<<<<<< HEAD
+2022-12-17 22:27:49 INFO     Extract Data source type is: Media
+2022-12-17 22:27:49 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:28:12 INFO     Extract Data source type is: Media
+2022-12-17 22:28:12 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:29:11 INFO     Extract Data source type is: Media
+2022-12-17 22:29:11 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:31:42 INFO     Extract Data source type is: Media
+2022-12-17 22:31:42 INFO     Load Data distination type is: Flatfile
+=======
+>>>>>>> 1fd2a7a1ea1d3e1de10cccaedf6ff510d5003ac3
+>>>>>>> 6a3c56d6a0128b49cc1896d8d176d5bf320d8f42
+2022-12-17 22:39:18 INFO     Extract Data source type is: Media
+2022-12-17 22:39:18 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:40:41 INFO     Extract Data source type is: Media
+2022-12-17 22:40:41 INFO     Load Data distination type is: Flatfile

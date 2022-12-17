@@ -23,6 +23,7 @@ def transform(data:pd.DataFrame, criteria:dict) -> pd.DataFrame:
     if criteria['COLUMNS'] != '__all__':
         data = data.filter(items=criteria['COLUMNS'])
 
+
     # distinct
     if criteria['DISTINCT']:
         data = data.drop_duplicates()
@@ -36,11 +37,16 @@ def transform(data:pd.DataFrame, criteria:dict) -> pd.DataFrame:
     if criteria['LIMIT']:
         data = data[:criteria['LIMIT']]
 
-    return data
+    if criteria['DATA_SOURCE_TYPE'] == 'video':
+        max_nans = len(data.columns) -1 if 'time' in data.columns or'__all__' not in['COLUMNS'] else len(data.columns)
+        hightech_export= data.loc[data.isnull().sum(axis=1)<max_nans]
+
+    return hightech_export.fillna('')
 
 
 
 def load(data:pd.DataFrame, data_destination:str):
+    # print(data)
     global result
     file_path = data_destination.split('::')[1]
     data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)

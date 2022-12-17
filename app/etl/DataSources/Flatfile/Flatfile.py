@@ -15,7 +15,7 @@ class Flatfile(IDataSource):
             EFlatfile.HTML: (lambda data, path: data.to_html(path)),
             EFlatfile.JSON: (lambda data,  path: data.to_json(path)),
             EFlatfile.XML: (lambda data, path: data.to_xml(path)),
-            EFlatfile.CSV: (lambda data, path: data.to_csv(path)),
+            EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
             EFlatfile.EXCEL: (lambda data, path: data.to_excel(path))
         }
 
