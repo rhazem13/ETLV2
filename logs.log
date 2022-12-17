@@ -607,3 +607,260 @@ KeyError: 0
 2022-12-15 00:22:48 INFO     Load Data distination type is: Flatfile
 2022-12-15 00:25:08 INFO     Extract Data source type is: Media
 2022-12-15 00:25:08 INFO     Load Data distination type is: Flatfile
+2022-12-17 20:35:37 INFO     Extract Data source type is: Media
+2022-12-17 20:35:37 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:44 INFO     Extract Data source type is: Media
+2022-12-17 20:35:44 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:45 INFO     Extract Data source type is: Media
+2022-12-17 20:35:45 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:46 INFO     Extract Data source type is: Media
+2022-12-17 20:35:46 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:46 INFO     Extract Data source type is: Media
+2022-12-17 20:35:46 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:46 INFO     Extract Data source type is: Media
+2022-12-17 20:35:46 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:47 INFO     Extract Data source type is: Media
+2022-12-17 20:35:47 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:54 INFO     Extract Data source type is: Media
+2022-12-17 20:35:54 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:54 INFO     Extract Data source type is: Media
+2022-12-17 20:35:54 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:35:54 INFO     Extract Data source type is: Media
+2022-12-17 20:35:54 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:03 INFO     Extract Data source type is: Media
+2022-12-17 20:36:03 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:03 INFO     Extract Data source type is: Media
+2022-12-17 20:36:03 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:05 INFO     Extract Data source type is: Media
+2022-12-17 20:36:05 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:05 INFO     Extract Data source type is: Media
+2022-12-17 20:36:05 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:06 INFO     Extract Data source type is: Media
+2022-12-17 20:36:06 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:42 INFO     Extract Data source type is: Media
+2022-12-17 20:36:42 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:36:44 INFO     Extract Data source type is: Media
+2022-12-17 20:36:44 ERROR    [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 39, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motion.py", line 9, in process_frames
+    frames = os.listdir(framesPath)  # A list of the Labeling
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\rhaze\\desktop\\projects\\frames'
+2022-12-17 20:38:04 INFO     Extract Data source type is: Media
+2022-12-17 20:38:04 INFO     Load Data distination type is: Flatfile
