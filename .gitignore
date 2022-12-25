@@ -1,7 +1,11 @@
 *.pyc 
 <<<<<<< HEAD
+<<<<<<< HEAD
 frames
 logs.log
+=======
+frames
+>>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
 =======
 frames
 >>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
