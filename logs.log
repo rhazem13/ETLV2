@@ -1992,3 +1992,97 @@ Traceback (most recent call last):
 PermissionError: [Errno 13] Permission denied: 'bsm.xlsx'
 2022-12-25 17:25:19 INFO     Extract Data source type is: Media
 2022-12-25 17:25:19 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:28:14 INFO     Extract Data source type is: Media
+2022-12-25 17:28:14 INFO     Load Data distination type is: Flatfile
+2022-12-25 18:19:14 INFO     Extract Data source type is: Media
+2022-12-25 18:19:14 ERROR    'ClsMotion' object has no attribute 'process_videos'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+AttributeError: 'ClsMotion' object has no attribute 'process_videos'
+2022-12-25 18:19:15 INFO     Extract Data source type is: Media
+2022-12-25 18:19:15 ERROR    'ClsMotion' object has no attribute 'process_videos'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+AttributeError: 'ClsMotion' object has no attribute 'process_videos'
+2022-12-25 18:19:56 INFO     Extract Data source type is: Media
+2022-12-25 18:19:57 ERROR    "None of ['Time'] are in the columns"
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 63, in process_videos
+    self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 167, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 223, in data_frame
+    export_details = pd.DataFrame(change).set_index("Time")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\frame.py", line 5451, in set_index
+    raise KeyError(f"None of {missing} are in the columns")
+KeyError: "None of ['Time'] are in the columns"
+2022-12-25 18:21:08 INFO     Extract Data source type is: Media
+2022-12-25 18:21:08 ERROR    [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 47, in process_videos
+    frames = os.listdir(vedio_path)
+NotADirectoryError: [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+2022-12-25 18:21:50 INFO     Extract Data source type is: Media
+2022-12-25 18:21:50 ERROR    [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 47, in process_videos
+    frames = os.listdir(vedio_path)
+NotADirectoryError: [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+2022-12-25 18:22:27 INFO     Extract Data source type is: Media
+2022-12-25 18:22:32 ERROR    'NoneType' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 12, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 41, in transform
+    max_nans = len(data.columns) -1 if 'time' in data.columns or'__all__' not in['COLUMNS'] else len(data.columns)
+AttributeError: 'NoneType' object has no attribute 'columns'
+2022-12-25 18:25:58 INFO     Extract Data source type is: Media
+2022-12-25 18:26:04 INFO     Load Data distination type is: Flatfile
+2022-12-25 18:33:53 INFO     Extract Data source type is: Media
+2022-12-25 18:33:59 INFO     Load Data distination type is: Flatfile
