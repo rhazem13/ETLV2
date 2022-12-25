@@ -1601,7 +1601,148 @@ PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\proje
 2022-12-17 22:34:55 INFO     Load Data distination type is: Console
 =======
 >>>>>>> c6188da3ec9cf188c7c6ce2aa387d0fdf815add8
+<<<<<<< HEAD
+2022-12-17 22:27:49 INFO     Extract Data source type is: Media
+2022-12-17 22:27:49 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:28:12 INFO     Extract Data source type is: Media
+2022-12-17 22:28:12 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:29:11 INFO     Extract Data source type is: Media
+2022-12-17 22:29:11 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:31:42 INFO     Extract Data source type is: Media
+2022-12-17 22:31:42 INFO     Load Data distination type is: Flatfile
+=======
 >>>>>>> 1fd2a7a1ea1d3e1de10cccaedf6ff510d5003ac3
+<<<<<<< HEAD
+>>>>>>> 6a3c56d6a0128b49cc1896d8d176d5bf320d8f42
+2022-12-17 22:39:18 INFO     Extract Data source type is: Media
+2022-12-17 22:39:18 INFO     Load Data distination type is: Flatfile
+2022-12-17 22:40:41 INFO     Extract Data source type is: Media
+2022-12-17 22:40:41 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:10:27 INFO     Extract Data source type is: Media
+2022-12-25 16:10:27 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:31 INFO     Extract Data source type is: Media
+2022-12-25 16:10:31 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:33 INFO     Extract Data source type is: Media
+2022-12-25 16:10:33 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:36 INFO     Extract Data source type is: Media
+2022-12-25 16:10:36 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:12:52 INFO     Extract Data source type is: Media
+2022-12-25 16:12:52 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:14:43 INFO     Extract Data source type is: Media
+2022-12-25 16:14:43 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:15:13 INFO     Extract Data source type is: Media
+2022-12-25 16:15:13 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:42:03 INFO     Extract Data source type is: Media
+2022-12-25 17:42:03 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:42:28 INFO     Extract Data source type is: Media
+2022-12-25 17:42:28 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:42:29 INFO     Extract Data source type is: Media
+2022-12-25 17:42:29 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:42:53 INFO     Extract Data source type is: Media
+2022-12-25 17:42:53 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:43:02 INFO     Extract Data source type is: Media
+2022-12-25 17:43:02 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:45:15 INFO     Extract Data source type is: Media
+2022-12-25 17:45:15 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:45:15 ERROR    No engine for filetype: 'xsls'
+Traceback (most recent call last):
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\excel\_base.py", line 827, in __new__
+    engine = config.get_option(f"io.excel.{ext}.writer", silent=True)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\_config\config.py", line 243, in __call__
+    return self.__func__(*args, **kwds)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\_config\config.py", line 115, in _get_option
+    key = _get_single_key(pat, silent)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\_config\config.py", line 101, in _get_single_key
+    raise OptionError(f"No such keys(s): {repr(pat)}")
+pandas._config.config.OptionError: "No such keys(s): 'io.excel.xsls.writer'"
+=======
 2022-12-25 16:52:34 INFO     Extract Data source type is: Media
 2022-12-25 16:52:34 INFO     Load Data distination type is: Flatfile
 2022-12-25 16:52:34 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
@@ -1768,10 +1909,184 @@ Traceback (most recent call last):
   File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
   File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
 KeyError: 0
+>>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
 
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
+<<<<<<< HEAD
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 19, in <lambda>
+    EFlatfile.EXCEL: (lambda data, path: data.to_excel(path))
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 2284, in to_excel
+    formatter.write(
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\formats\excel.py", line 834, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\excel\_base.py", line 831, in __new__
+    raise ValueError(f"No engine for filetype: '{ext}'") from err
+ValueError: No engine for filetype: 'xsls'
+2022-12-25 17:45:26 INFO     Extract Data source type is: Media
+2022-12-25 17:45:27 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:45:38 INFO     Extract Data source type is: Media
+2022-12-25 17:45:38 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:45:52 INFO     Extract Data source type is: Media
+2022-12-25 17:45:52 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:45:54 INFO     Extract Data source type is: Media
+2022-12-25 17:45:54 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:10 INFO     Extract Data source type is: Media
+2022-12-25 17:56:10 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:13 INFO     Extract Data source type is: Media
+2022-12-25 17:56:13 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:14 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:14 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:15 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:34 INFO     Extract Data source type is: Media
+2022-12-25 17:56:34 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:35 INFO     Extract Data source type is: Media
+2022-12-25 17:56:35 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:41 INFO     Extract Data source type is: Media
+2022-12-25 17:56:41 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:49 INFO     Extract Data source type is: Media
+2022-12-25 17:56:49 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:57:00 INFO     Extract Data source type is: Media
+2022-12-25 17:57:00 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:57:42 INFO     Extract Data source type is: Media
+2022-12-25 17:57:42 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 18:06:05 INFO     Extract Data source type is: Media
+2022-12-25 18:06:06 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 18:09:17 INFO     Extract Data source type is: Media
+2022-12-25 18:09:17 INFO     Load Data distination type is: Flatfile
+=======
   File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
     exec(str(code))
   File "<string>", line 3, in <module>
@@ -1992,6 +2307,7 @@ Traceback (most recent call last):
 PermissionError: [Errno 13] Permission denied: 'bsm.xlsx'
 2022-12-25 17:25:19 INFO     Extract Data source type is: Media
 2022-12-25 17:25:19 INFO     Load Data distination type is: Flatfile
+<<<<<<< HEAD
 2022-12-25 17:28:14 INFO     Extract Data source type is: Media
 2022-12-25 17:28:14 INFO     Load Data distination type is: Flatfile
 2022-12-25 18:19:14 INFO     Extract Data source type is: Media
@@ -2086,3 +2402,6 @@ AttributeError: 'NoneType' object has no attribute 'columns'
 2022-12-25 18:26:04 INFO     Load Data distination type is: Flatfile
 2022-12-25 18:33:53 INFO     Extract Data source type is: Media
 2022-12-25 18:33:59 INFO     Load Data distination type is: Flatfile
+=======
+>>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
+>>>>>>> b41d86811e1a65a32c836d8cbeda051a2f39bb5b
