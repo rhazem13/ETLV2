@@ -1,11 +1,25 @@
-time,head_movement,leg_movement,tail_movement,wing_movement,head_movement_time_span,head_movement_time_start
-551.0,True,,,,546.0,6.0
-557.0,True,,,,553.0,5.0
-565.0,True,,,,559.0,7.0
-571.0,True,,,,571.0,1.0
-573.0,True,,,,573.0,1.0
-575.0,True,,,,575.0,1.0
-580.0,True,,,,577.0,4.0
-592.0,True,,,,589.0,4.0
-594.0,True,,,,594.0,1.0
-597.0,True,,,,596.0,2.0
+No Motion,"No Motion
+ Time Span (sec)",head status,head movement,"head movement
+ time span",leg status,leg movement,"leg movement
+  time span",wing status,wing movement,"wing movement
+  time span",tail status,tail movement,"tail movement
+  time span"
+,,center,left-center,6,,,,,,,,,
+,,left,center-left,1,,,,,,,,,
+,,center,left-center,5,,,,,,,,,
+,,left,center-left,1,,,,,,,,,
+,,center,left-center,7,,,,,,,,,
+,,left,center-left,5,,,,,,,,,
+,,center,left-center,1,,,,,,,,,
+,,right,center-right,1,,,,,,,,,
+,,center,right-center,1,,,,,,,,,
+,,left,center-left,1,,,,,,,,,
+,,center,left-center,1,,,,,,,,,
+,,left,center-left,1,,,,,,,,,
+,,center,left-center,4,,,,,,,,,
+,,left,center-left,8,,,,,,,,,
+,,center,left-center,4,,,,,,,,,
+,,left,center-left,1,,,,,,,,,
+,,right,left-right,1,,,,,,,,,
+,,center,right-center,1,,,,,,,,,
+,,left,center-left,2,,,,,,,,,
