@@ -1790,3 +1790,129 @@ Traceback (most recent call last):
   File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
     return hightech_export.fillna('')
 UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:10 INFO     Extract Data source type is: Media
+2022-12-25 17:56:10 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:13 INFO     Extract Data source type is: Media
+2022-12-25 17:56:13 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:14 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:14 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:15 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:34 INFO     Extract Data source type is: Media
+2022-12-25 17:56:34 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:35 INFO     Extract Data source type is: Media
+2022-12-25 17:56:35 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:41 INFO     Extract Data source type is: Media
+2022-12-25 17:56:41 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:49 INFO     Extract Data source type is: Media
+2022-12-25 17:56:49 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:57:00 INFO     Extract Data source type is: Media
+2022-12-25 17:57:00 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:57:42 INFO     Extract Data source type is: Media
+2022-12-25 17:57:42 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 18:06:05 INFO     Extract Data source type is: Media
+2022-12-25 18:06:06 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 18:09:17 INFO     Extract Data source type is: Media
+2022-12-25 18:09:17 INFO     Load Data distination type is: Flatfile
