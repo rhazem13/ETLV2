@@ -2434,6 +2434,266 @@ KeyError: "None of ['Time'] are in the columns"
 2022-12-25 19:07:57 INFO     Load Data distination type is: Flatfile
 2022-12-25 19:11:11 INFO     Extract Data source type is: Media
 2022-12-25 19:11:16 INFO     Load Data distination type is: Flatfile
+<<<<<<< HEAD
+2022-12-25 20:01:15 INFO     Extract Data source type is: Media
+2022-12-25 20:01:20 INFO     Load Data distination type is: Flatfile
+2022-12-25 20:02:04 INFO     Extract Data source type is: Media
+2022-12-25 20:02:08 INFO     Load Data distination type is: Flatfile
+2022-12-25 20:09:52 ERROR    LexToken(COLNAME,'status',1,12)
+2022-12-25 20:12:02 INFO     Extract Data source type is: Media
+2022-12-25 20:12:02 ERROR    'leg movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 131, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+KeyError: 'leg movement'
+2022-12-25 20:12:13 INFO     Extract Data source type is: Media
+2022-12-25 20:12:13 ERROR    'leg movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 131, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+KeyError: 'leg movement'
+2022-12-25 20:12:16 INFO     Extract Data source type is: Media
+2022-12-25 20:12:16 ERROR    'leg movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 131, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+KeyError: 'leg movement'
+2022-12-25 20:12:22 INFO     Extract Data source type is: Media
+2022-12-25 20:12:22 ERROR    'leg movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 131, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+KeyError: 'leg movement'
+2022-12-25 20:14:27 INFO     Extract Data source type is: Media
+2022-12-25 20:14:27 ERROR    'wing movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 139, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['wing movement'] == '' and new_row['wing movement'] != '':
+KeyError: 'wing movement'
+2022-12-25 20:15:05 INFO     Extract Data source type is: Media
+2022-12-25 20:15:05 ERROR    'leg movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 131, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+KeyError: 'leg movement'
+2022-12-25 20:16:14 INFO     Extract Data source type is: Media
+2022-12-25 20:16:14 ERROR    'leg movement'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 131, in get_motion_per_time
+    if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+KeyError: 'leg movement'
+2022-12-25 20:16:40 INFO     Extract Data source type is: Media
+2022-12-25 20:16:40 ERROR    Length mismatch: Expected axis has 26 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 221, in data_frame
+    export_details.columns = ["No Motion", "No Motion\n Time Span (sec)",
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\base.py", line 57, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 26 elements, new values have 14 elements
+2022-12-25 20:18:49 INFO     Extract Data source type is: Media
+2022-12-25 20:18:49 ERROR    Length mismatch: Expected axis has 26 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 221, in data_frame
+    export_details.columns = ["No Motion", "No Motion\n Time Span (sec)",
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\base.py", line 57, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 26 elements, new values have 14 elements
+2022-12-25 20:22:15 INFO     Extract Data source type is: Media
+2022-12-25 20:22:15 ERROR    Length mismatch: Expected axis has 26 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 221, in data_frame
+    export_details.columns = ["No Motion", "No Motion\n Time Span (sec)",
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\base.py", line 57, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 26 elements, new values have 14 elements
+2022-12-25 20:33:39 INFO     Extract Data source type is: Media
+2022-12-25 20:33:39 ERROR    Length mismatch: Expected axis has 26 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 11, in <lambda>
+    EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_frames(framesPath)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 42, in process_frames
+    return self.get_motion_per_time(dict_frame_time)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 221, in data_frame
+    export_details.columns = ["No Motion", "No Motion\n Time Span (sec)",
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\base.py", line 57, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 26 elements, new values have 14 elements
+=======
 2022-12-25 20:23:57 INFO     Extract Data source type is: Media
 2022-12-25 20:24:03 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
 Traceback (most recent call last):
@@ -2648,3 +2908,4 @@ Traceback (most recent call last):
 ValueError: Length mismatch: Expected axis has 18 elements, new values have 14 elements
 2022-12-25 20:37:36 INFO     Extract Data source type is: Media
 2022-12-25 20:37:42 INFO     Load Data distination type is: Flatfile
+>>>>>>> 560f51f6244826d63ad8cabba1d3e39b4060a1c6

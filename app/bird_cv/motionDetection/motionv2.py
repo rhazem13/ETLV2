@@ -116,7 +116,11 @@ class ClsMotion(object):
                             new_row['Time'] = f'{int(t//60)}:{t%60:.2f}'
                             new_row[f"{str(birdPart)}_status"] = f"{diff[birdPart]}"
                             new_row[f"{str(birdPart)}_movement"] = f"{birds_pose_curr[birdPart]}-{diff[birdPart]}"
+<<<<<<< HEAD
+                            new_row[f"{str(birdPart)}_movement time span"] = int(
+=======
                             new_row[f"{str(birdPart)}_movement_time_span"] = int(
+>>>>>>> 560f51f6244826d63ad8cabba1d3e39b4060a1c6
                                 dict_pose_end_time[birdPart])-int(dict_pose_start_time[birdPart])
 
                             if (len(tbl_movement) != 0 and tbl_movement[len(tbl_movement)-1]['Time'] == new_row['Time']):
