@@ -71,11 +71,11 @@ class ClsMotion(object):
         on = Details.on.value
         none = Details.none.value
 
-        row = dict({"Time": 0, "No Motion": '', "No Motion Time Span": '',
-                    'head status': '',      "head movement": '', "head movement time span": '',
-                    'leg status': '',       "leg movement": '', "leg movement time span": '',
-                    'wing status': '',      "wing movement": '', "wing movement time span": '',
-                    'tail status': '',       "tail movement": '', "tail movement time span": ''})
+        row = dict({"Time": 0, "No Motion": '', "No Motion_time_span": '',
+                    'head_status': '',      "head_movement": '', "head_movement_time_span": '',
+                    'leg_status': '',       "leg_movement": '', "leg_movement_time_span": '',
+                    'wing_status': '',      "wing_movement": '', "wing_movement_time_span": '',
+                    'tail_status': '',       "tail_movement": '', "tail_movement_time_span": ''})
         tbl_movement = []
         dict_pose_change = {head: False, leg: False, wing: False, tail: False}
         dict_pose_start_time = {head: 0.0, leg: 0.0, wing: 0.0, tail: 0.0}
@@ -114,43 +114,43 @@ class ClsMotion(object):
                             new_row = row.copy()
                             t = next_time/30
                             new_row['Time'] = f'{int(t//60)}:{t%60:.2f}'
-                            new_row[f"{str(birdPart)} status"] = f"{diff[birdPart]}"
-                            new_row[f"{str(birdPart)} movement"] = f"{birds_pose_curr[birdPart]}-{diff[birdPart]}"
-                            new_row[f"{str(birdPart)} movement time span"] = int(
+                            new_row[f"{str(birdPart)}_status"] = f"{diff[birdPart]}"
+                            new_row[f"{str(birdPart)}_movement"] = f"{birds_pose_curr[birdPart]}-{diff[birdPart]}"
+                            new_row[f"{str(birdPart)}_movement_time_span"] = int(
                                 dict_pose_end_time[birdPart])-int(dict_pose_start_time[birdPart])
 
                             if (len(tbl_movement) != 0 and tbl_movement[len(tbl_movement)-1]['Time'] == new_row['Time']):
-                                if tbl_movement[len(tbl_movement)-1]['head movement'] == '' and new_row['head movement'] != '':
+                                if tbl_movement[len(tbl_movement)-1]['head_movement'] == '' and new_row['head_movement'] != '':
                                     tbl_movement[len(
-                                        tbl_movement)-1]['head movement'] = new_row['head movement']
+                                        tbl_movement)-1]['head_movement'] = new_row['head_movement']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['head movement time span'] = new_row['head movement time span']
+                                        tbl_movement)-1]['head_movement_time_span'] = new_row['head_movement_time_span']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['head status'] = new_row['head status']
+                                        tbl_movement)-1]['head_status'] = new_row['head_status']
 
-                                if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
+                                if tbl_movement[len(tbl_movement)-1]['leg_movement'] == '' and new_row['leg_movement'] != '':
                                     tbl_movement[len(
-                                        tbl_movement)-1]['leg movement'] = new_row['leg movement']
+                                        tbl_movement)-1]['leg_movement'] = new_row['leg_movement']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['leg movement time span'] = new_row['leg movement time span']
+                                        tbl_movement)-1]['leg_movement_time_span'] = new_row['leg_movement_time_span']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['leg status'] = new_row['leg status']
+                                        tbl_movement)-1]['leg_status'] = new_row['leg_status']
 
-                                if tbl_movement[len(tbl_movement)-1]['wing movement'] == '' and new_row['wing movement'] != '':
+                                if tbl_movement[len(tbl_movement)-1]['wing_movement'] == '' and new_row['wing_movement'] != '':
                                     tbl_movement[len(
-                                        tbl_movement)-1]['wing movement'] = new_row['wing movement']
+                                        tbl_movement)-1]['wing_movement'] = new_row['wing_movement']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['wing movement time span'] = new_row['wing movement time span']
+                                        tbl_movement)-1]['wing_movement_time_span'] = new_row['wing_movement_time_span']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['wing status'] = new_row['wing status']
+                                        tbl_movement)-1]['wing_status'] = new_row['wing_status']
 
-                                if tbl_movement[len(tbl_movement)-1]['tail movement'] == '' and new_row['tail movement'] != '':
+                                if tbl_movement[len(tbl_movement)-1]['tail_movement'] == '' and new_row['tail_movement'] != '':
                                     tbl_movement[len(
-                                        tbl_movement)-1]['tail movement'] = new_row['tail movement']
+                                        tbl_movement)-1]['tail_movement'] = new_row['tail_movement']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['tail movement time span'] = new_row['tail movement time span']
+                                        tbl_movement)-1]['tail_movement_time_span'] = new_row['tail_movement_time_span']
                                     tbl_movement[len(
-                                        tbl_movement)-1]['tail status'] = new_row['tail status']
+                                        tbl_movement)-1]['tail_status'] = new_row['tail_status']
 
                             else:
                                 tbl_movement.append(new_row)
@@ -218,11 +218,11 @@ class ClsMotion(object):
             by="Time", dropna=False).max()
         # print(export_ready_dataframe)
         # export_ready_dataframe["change"] = pd.Series(change)
-        export_details.columns = ["No Motion", "No Motion\n Time Span (sec)",
-                                  'head status', "head movement", "head movement\n time span",
-                                  'leg status',  "leg movement", "leg movement\n  time span",
-                                  'wing status',   "wing movement", "wing movement\n  time span",
-                                  'tail status',    "tail movement", "tail movement\n  time span"]
+        export_details.columns = ["No Motion", "No Motion\n_time_span (sec)",
+                                  'head_status', "head_movement", "head_movement\n_time_span",
+                                  'leg_status',  "leg_movement", "leg_movement\n_time_span",
+                                  'wing_status',   "wing_movement", "wing_movement\n_time_span",
+                                  'tail_status',    "tail_movement", "tail_movement\n_time_span"]
         # export_details.to_excel(
         #     excel_writer=self.sheetPath, sheet_name="Details")
         return export_details

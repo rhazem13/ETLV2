@@ -66,7 +66,7 @@ class ClsMotion(object):
         none = Details.none.value
 
         row = dict({"Time": 0, "No Motion": '', "No Motion Time Span": '',
-                    'head status': '',      "head movement": '', "head movement time span": '',
+                    'head_status': '',      "head movement": '', "head movement time span": '',
                     'leg status': '',       "leg movement": '', "leg movement time span": '',
                     'wing status': '',      "wing movement": '', "wing movement time span": '',
                     'tail status': '',       "tail movement": '', "tail movement time span": ''})
@@ -118,7 +118,7 @@ class ClsMotion(object):
                                 if tbl_movement[len(tbl_movement)-1]['head movement'] == '' and new_row['head movement'] != '':
                                     tbl_movement[len( tbl_movement)-1]['head movement'] = new_row['head movement']
                                     tbl_movement[len( tbl_movement)-1]['head movement time span'] = new_row['head movement time span']
-                                    tbl_movement[len( tbl_movement)-1]['head status'] = new_row['head status']
+                                    tbl_movement[len( tbl_movement)-1]['head_status'] = new_row['head_status']
                                 
                                 if tbl_movement[len(tbl_movement)-1]['leg movement'] == '' and new_row['leg movement'] != '':
                                     tbl_movement[len(tbl_movement)-1]['leg movement'] = new_row['leg movement']
@@ -206,7 +206,7 @@ class ClsMotion(object):
         # print(export_ready_dataframe)
         # export_ready_dataframe["change"] = pd.Series(change)
         export_details.columns = ["No Motion", "No Motion\n Time Span (sec)",
-                                  'head status', "head movement", "head movement\n time span",
+                                  'head_status', "head movement", "head movement\n time span",
                                   'leg status',  "leg movement", "leg movement\n  time span",
                                   'wing status',   "wing movement", "wing movement\n  time span",
                                   'tail status',    "tail movement", "tail movement\n  time span"]
