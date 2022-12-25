@@ -1,1 +1,4 @@
 *.pyc 
+frames
+frames/
+\frames
