@@ -1,7 +1,7 @@
 import cv2
 import pathlib
 import os
-from app.bird_cv.motionDetection.motion import ClsMotion
+from app.bird_cv.motionDetection.motionv2 import ClsMotion
 import pandas as pd
 from numpy import nan
 
@@ -27,9 +27,10 @@ class BirdMoveDetect:
     def get_changes(self, framesPath):
         motion = ClsMotion()
         changes_arr = motion.process_frames(framesPath) 
-        changes_converted = self.convert_to_pd(changes_arr)
+
+        #changes_converted = self.convert_to_pd(changes_arr)
         #changes_converted = changes_converted.reset_index(drop=True)
-        return changes_converted
+        return changes_arr
 
     def convert_to_pd(self, bird_dict):
         frames = []

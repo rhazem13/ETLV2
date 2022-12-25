@@ -1617,3 +1617,61 @@ PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\proje
 2022-12-17 22:39:18 INFO     Load Data distination type is: Flatfile
 2022-12-17 22:40:41 INFO     Extract Data source type is: Media
 2022-12-17 22:40:41 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:10:27 INFO     Extract Data source type is: Media
+2022-12-25 16:10:27 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:31 INFO     Extract Data source type is: Media
+2022-12-25 16:10:31 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:33 INFO     Extract Data source type is: Media
+2022-12-25 16:10:33 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:36 INFO     Extract Data source type is: Media
+2022-12-25 16:10:36 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:12:52 INFO     Extract Data source type is: Media
+2022-12-25 16:12:52 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:14:43 INFO     Extract Data source type is: Media
+2022-12-25 16:14:43 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:15:13 INFO     Extract Data source type is: Media
+2022-12-25 16:15:13 INFO     Load Data distination type is: Flatfile
