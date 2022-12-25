@@ -213,3 +213,12 @@ class ClsMotion(object):
         return export_details
         # export_ready_dataframe.to_excel(excel_writer=self.sheetPath, sheet_name="totals")
 
+
+if __name__ == '__main__':
+    # sheet path, frames path
+    ob = ClsMotion(r"C:\Users\rhaze\Downloads\xd\test.xlsx")
+    ob.process_frames(
+        r"C:\Users\rhaze\Desktop\Projects\ProjectETL\frames")
+    # time_string = time.strftime("%H:%M:%S", named_tuple)
+
+    # print(time_string)
