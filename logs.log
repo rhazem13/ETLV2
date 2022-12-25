@@ -1612,8 +1612,1039 @@ PermissionError: [Errno 13] Permission denied: 'c:\\users\\rhaze\\desktop\\proje
 2022-12-17 22:31:42 INFO     Load Data distination type is: Flatfile
 =======
 >>>>>>> 1fd2a7a1ea1d3e1de10cccaedf6ff510d5003ac3
+<<<<<<< HEAD
 >>>>>>> 6a3c56d6a0128b49cc1896d8d176d5bf320d8f42
 2022-12-17 22:39:18 INFO     Extract Data source type is: Media
 2022-12-17 22:39:18 INFO     Load Data distination type is: Flatfile
 2022-12-17 22:40:41 INFO     Extract Data source type is: Media
 2022-12-17 22:40:41 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:10:27 INFO     Extract Data source type is: Media
+2022-12-25 16:10:27 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:31 INFO     Extract Data source type is: Media
+2022-12-25 16:10:31 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:33 INFO     Extract Data source type is: Media
+2022-12-25 16:10:33 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:10:36 INFO     Extract Data source type is: Media
+2022-12-25 16:10:36 ERROR    __init__() missing 1 required positional argument: 'sheet_path'
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\bird_cv\BirdMoveDetect.py", line 28, in get_changes
+    motion = ClsMotion()
+TypeError: __init__() missing 1 required positional argument: 'sheet_path'
+2022-12-25 16:12:52 INFO     Extract Data source type is: Media
+2022-12-25 16:12:52 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:14:43 INFO     Extract Data source type is: Media
+2022-12-25 16:14:43 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:15:13 INFO     Extract Data source type is: Media
+2022-12-25 16:15:13 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:42:03 INFO     Extract Data source type is: Media
+2022-12-25 17:42:03 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:42:28 INFO     Extract Data source type is: Media
+2022-12-25 17:42:28 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:42:29 INFO     Extract Data source type is: Media
+2022-12-25 17:42:29 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:42:53 INFO     Extract Data source type is: Media
+2022-12-25 17:42:53 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:43:02 INFO     Extract Data source type is: Media
+2022-12-25 17:43:02 ERROR    <EFlatfile.XML: 'xml'>
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 52, in load
+    data_destination:IDataSource = DataSourceFactory.createDataSource(data_destination)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\factory.py", line 28, in createDataSource
+    return handlers[Type]()
+KeyError: <EFlatfile.XML: 'xml'>
+2022-12-25 17:45:15 INFO     Extract Data source type is: Media
+2022-12-25 17:45:15 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:45:15 ERROR    No engine for filetype: 'xsls'
+Traceback (most recent call last):
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\excel\_base.py", line 827, in __new__
+    engine = config.get_option(f"io.excel.{ext}.writer", silent=True)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\_config\config.py", line 243, in __call__
+    return self.__func__(*args, **kwds)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\_config\config.py", line 115, in _get_option
+    key = _get_single_key(pat, silent)
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\_config\config.py", line 101, in _get_single_key
+    raise OptionError(f"No such keys(s): {repr(pat)}")
+pandas._config.config.OptionError: "No such keys(s): 'io.excel.xsls.writer'"
+=======
+2022-12-25 16:52:34 INFO     Extract Data source type is: Media
+2022-12-25 16:52:34 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:52:34 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 16:52:36 INFO     Extract Data source type is: Media
+2022-12-25 16:52:36 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:52:36 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 16:52:36 INFO     Extract Data source type is: Media
+2022-12-25 16:52:36 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:52:36 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 16:53:25 INFO     Extract Data source type is: Media
+2022-12-25 16:53:25 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:53:25 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 16:53:56 INFO     Extract Data source type is: Media
+2022-12-25 16:53:56 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:55:09 INFO     Extract Data source type is: Media
+2022-12-25 16:55:09 INFO     Load Data distination type is: Flatfile
+2022-12-25 16:56:11 INFO     Extract Data source type is: Media
+2022-12-25 16:56:11 ERROR    'dict' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 12, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 41, in transform
+    max_nans = len(data.columns) -1 if 'time' in data.columns or'__all__' not in['COLUMNS'] else len(data.columns)
+AttributeError: 'dict' object has no attribute 'columns'
+2022-12-25 16:56:13 INFO     Extract Data source type is: Media
+2022-12-25 16:56:13 ERROR    'dict' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 12, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 41, in transform
+    max_nans = len(data.columns) -1 if 'time' in data.columns or'__all__' not in['COLUMNS'] else len(data.columns)
+AttributeError: 'dict' object has no attribute 'columns'
+2022-12-25 17:03:40 INFO     Extract Data source type is: Media
+2022-12-25 17:03:40 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:11:08 INFO     Extract Data source type is: Media
+2022-12-25 17:11:08 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:11:08 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 17:11:42 INFO     Extract Data source type is: Media
+2022-12-25 17:11:42 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:11:42 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 17:12:07 INFO     Extract Data source type is: Media
+2022-12-25 17:12:07 ERROR    0
+Traceback (most recent call last):
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexes\base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+>>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+<<<<<<< HEAD
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 19, in <lambda>
+    EFlatfile.EXCEL: (lambda data, path: data.to_excel(path))
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\generic.py", line 2284, in to_excel
+    formatter.write(
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\formats\excel.py", line 834, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\io\excel\_base.py", line 831, in __new__
+    raise ValueError(f"No engine for filetype: '{ext}'") from err
+ValueError: No engine for filetype: 'xsls'
+2022-12-25 17:45:26 INFO     Extract Data source type is: Media
+2022-12-25 17:45:27 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:45:38 INFO     Extract Data source type is: Media
+2022-12-25 17:45:38 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:45:52 INFO     Extract Data source type is: Media
+2022-12-25 17:45:52 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:45:54 INFO     Extract Data source type is: Media
+2022-12-25 17:45:54 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:10 INFO     Extract Data source type is: Media
+2022-12-25 17:56:10 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:13 INFO     Extract Data source type is: Media
+2022-12-25 17:56:13 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:14 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:14 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:14 INFO     Extract Data source type is: Media
+2022-12-25 17:56:15 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:56:34 INFO     Extract Data source type is: Media
+2022-12-25 17:56:34 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:35 INFO     Extract Data source type is: Media
+2022-12-25 17:56:35 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:41 INFO     Extract Data source type is: Media
+2022-12-25 17:56:41 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:56:49 INFO     Extract Data source type is: Media
+2022-12-25 17:56:49 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 17:57:00 INFO     Extract Data source type is: Media
+2022-12-25 17:57:00 ERROR    name 'pd' is not defined
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: pd.read_html(path)),
+NameError: name 'pd' is not defined
+2022-12-25 17:57:42 INFO     Extract Data source type is: Media
+2022-12-25 17:57:42 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 18:06:05 INFO     Extract Data source type is: Media
+2022-12-25 18:06:06 ERROR    local variable 'hightech_export' referenced before assignment
+Traceback (most recent call last):
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 4, in <module>
+  File "c:\Users\rhaze\Desktop\Projects\ProjectETL\ETLV2\app\etl\core.py", line 44, in transform
+    return hightech_export.fillna('')
+UnboundLocalError: local variable 'hightech_export' referenced before assignment
+2022-12-25 18:09:17 INFO     Extract Data source type is: Media
+2022-12-25 18:09:17 INFO     Load Data distination type is: Flatfile
+=======
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 42, in get_changes
+    print(changes_arr[0])
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\frame.py", line 3458, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2022-12-25 17:12:12 INFO     Extract Data source type is: Media
+2022-12-25 17:12:12 ERROR    0
+Traceback (most recent call last):
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexes\base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 42, in get_changes
+    print(changes_arr[0])
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\frame.py", line 3458, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2022-12-25 17:12:39 INFO     Extract Data source type is: Media
+2022-12-25 17:12:39 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:12:39 ERROR    [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 15, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 54, in load
+    result = data_destination.load(data, file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 23, in load
+    self.loadCallbacks[self.type](data,file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Flatfile\Flatfile.py", line 18, in <lambda>
+    EFlatfile.CSV: (lambda data, path: data.to_csv(path, index=False)),
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: 'd:\\sharaf\\etlv2\\results\\test.csv'
+2022-12-25 17:13:06 INFO     Extract Data source type is: Media
+2022-12-25 17:13:06 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:15:46 INFO     Extract Data source type is: Media
+2022-12-25 17:15:46 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:17:53 INFO     Extract Data source type is: Media
+2022-12-25 17:17:54 ERROR    No engine for filetype: ''
+Traceback (most recent call last):
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_base.py", line 827, in __new__
+    engine = config.get_option(f"io.excel.{ext}.writer", silent=True)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\_config\config.py", line 243, in __call__
+    return self.__func__(*args, **kwds)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\_config\config.py", line 115, in _get_option
+    key = _get_single_key(pat, silent)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\_config\config.py", line 101, in _get_single_key
+    raise OptionError(f"No such keys(s): {repr(pat)}")
+pandas._config.config.OptionError: "No such keys(s): 'io.excel..writer'"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 43, in get_changes
+    excel_writer="bsm", sheet_name="Details")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 2291, in to_excel
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\excel.py", line 835, in write
+    writer, engine=engine, storage_options=storage_options
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_base.py", line 831, in __new__
+    raise ValueError(f"No engine for filetype: '{ext}'") from err
+ValueError: No engine for filetype: ''
+2022-12-25 17:17:56 INFO     Extract Data source type is: Media
+2022-12-25 17:17:56 ERROR    No engine for filetype: ''
+Traceback (most recent call last):
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_base.py", line 827, in __new__
+    engine = config.get_option(f"io.excel.{ext}.writer", silent=True)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\_config\config.py", line 243, in __call__
+    return self.__func__(*args, **kwds)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\_config\config.py", line 115, in _get_option
+    key = _get_single_key(pat, silent)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\_config\config.py", line 101, in _get_single_key
+    raise OptionError(f"No such keys(s): {repr(pat)}")
+pandas._config.config.OptionError: "No such keys(s): 'io.excel..writer'"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 43, in get_changes
+    excel_writer="bsm", sheet_name="Details")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 2291, in to_excel
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\excel.py", line 835, in write
+    writer, engine=engine, storage_options=storage_options
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_base.py", line 831, in __new__
+    raise ValueError(f"No engine for filetype: '{ext}'") from err
+ValueError: No engine for filetype: ''
+2022-12-25 17:19:15 INFO     Extract Data source type is: Media
+2022-12-25 17:19:15 ERROR    No module named 'openpyxl'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 43, in get_changes
+    excel_writer="bsm.xlsx", sheet_name="Details")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 2291, in to_excel
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\excel.py", line 835, in write
+    writer, engine=engine, storage_options=storage_options
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_openpyxl.py", line 48, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+2022-12-25 17:19:16 INFO     Extract Data source type is: Media
+2022-12-25 17:19:16 ERROR    No module named 'openpyxl'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 43, in get_changes
+    excel_writer="bsm.xlsx", sheet_name="Details")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 2291, in to_excel
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\excel.py", line 835, in write
+    writer, engine=engine, storage_options=storage_options
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_openpyxl.py", line 48, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+2022-12-25 17:22:08 INFO     Extract Data source type is: Media
+2022-12-25 17:22:09 INFO     Load Data distination type is: Flatfile
+2022-12-25 17:23:09 INFO     Extract Data source type is: Media
+2022-12-25 17:23:09 ERROR    [Errno 13] Permission denied: 'bsm.xlsx'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 43, in get_changes
+    excel_writer="bsm.xlsx", sheet_name="Details")   """
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 2291, in to_excel
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\excel.py", line 835, in write
+    writer, engine=engine, storage_options=storage_options
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_openpyxl.py", line 57, in __init__
+    engine_kwargs=engine_kwargs,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_base.py", line 926, in __init__
+    path, mode, storage_options=storage_options, is_text=False
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: 'bsm.xlsx'
+2022-12-25 17:24:46 INFO     Extract Data source type is: Media
+2022-12-25 17:24:46 ERROR    [Errno 13] Permission denied: 'bsm.xlsx'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 43, in get_changes
+    excel_writer="bsm.xlsx", sheet_name="Details")   """
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 2291, in to_excel
+    storage_options=storage_options,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\formats\excel.py", line 835, in write
+    writer, engine=engine, storage_options=storage_options
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_openpyxl.py", line 57, in __init__
+    engine_kwargs=engine_kwargs,
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\excel\_base.py", line 926, in __init__
+    path, mode, storage_options=storage_options, is_text=False
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: 'bsm.xlsx'
+2022-12-25 17:25:19 INFO     Extract Data source type is: Media
+2022-12-25 17:25:19 INFO     Load Data distination type is: Flatfile
+<<<<<<< HEAD
+2022-12-25 17:28:14 INFO     Extract Data source type is: Media
+2022-12-25 17:28:14 INFO     Load Data distination type is: Flatfile
+2022-12-25 18:19:14 INFO     Extract Data source type is: Media
+2022-12-25 18:19:14 ERROR    'ClsMotion' object has no attribute 'process_videos'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+AttributeError: 'ClsMotion' object has no attribute 'process_videos'
+2022-12-25 18:19:15 INFO     Extract Data source type is: Media
+2022-12-25 18:19:15 ERROR    'ClsMotion' object has no attribute 'process_videos'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+AttributeError: 'ClsMotion' object has no attribute 'process_videos'
+2022-12-25 18:19:56 INFO     Extract Data source type is: Media
+2022-12-25 18:19:57 ERROR    "None of ['Time'] are in the columns"
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 63, in process_videos
+    self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 167, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 223, in data_frame
+    export_details = pd.DataFrame(change).set_index("Time")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\frame.py", line 5451, in set_index
+    raise KeyError(f"None of {missing} are in the columns")
+KeyError: "None of ['Time'] are in the columns"
+2022-12-25 18:21:08 INFO     Extract Data source type is: Media
+2022-12-25 18:21:08 ERROR    [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 47, in process_videos
+    frames = os.listdir(vedio_path)
+NotADirectoryError: [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+2022-12-25 18:21:50 INFO     Extract Data source type is: Media
+2022-12-25 18:21:50 ERROR    [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in extract
+    data = BirdMoveDetect().get_changes(file_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 29, in get_changes
+    changes_arr = motion.process_videos(framesPath)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 47, in process_videos
+    frames = os.listdir(vedio_path)
+NotADirectoryError: [WinError 267] The directory name is invalid: 'd:\\sharaf\\etlv2\\app\\bird_cv\\static\\birds1.mp4'
+2022-12-25 18:22:27 INFO     Extract Data source type is: Media
+2022-12-25 18:22:32 ERROR    'NoneType' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 12, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 41, in transform
+    max_nans = len(data.columns) -1 if 'time' in data.columns or'__all__' not in['COLUMNS'] else len(data.columns)
+AttributeError: 'NoneType' object has no attribute 'columns'
+2022-12-25 18:25:58 INFO     Extract Data source type is: Media
+2022-12-25 18:26:04 INFO     Load Data distination type is: Flatfile
+2022-12-25 18:33:53 INFO     Extract Data source type is: Media
+2022-12-25 18:33:59 INFO     Load Data distination type is: Flatfile
+=======
+>>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
+>>>>>>> b41d86811e1a65a32c836d8cbeda051a2f39bb5b
+2022-12-25 19:06:27 INFO     Extract Data source type is: Media
+2022-12-25 19:06:27 ERROR    "None of ['Time'] are in the columns"
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 216, in data_frame
+    export_details = pd.DataFrame(change).set_index("Time")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\frame.py", line 5451, in set_index
+    raise KeyError(f"None of {missing} are in the columns")
+KeyError: "None of ['Time'] are in the columns"
+2022-12-25 19:07:57 INFO     Extract Data source type is: Media
+2022-12-25 19:07:57 INFO     Load Data distination type is: Flatfile
+2022-12-25 19:11:11 INFO     Extract Data source type is: Media
+2022-12-25 19:11:16 INFO     Load Data distination type is: Flatfile
+2022-12-25 20:23:57 INFO     Extract Data source type is: Media
+2022-12-25 20:24:03 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:24:12 INFO     Extract Data source type is: Media
+2022-12-25 20:24:18 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:26:30 INFO     Extract Data source type is: Media
+2022-12-25 20:26:36 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:26:41 INFO     Extract Data source type is: Media
+2022-12-25 20:26:47 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:27:47 INFO     Extract Data source type is: Media
+2022-12-25 20:27:53 ERROR    Length mismatch: Expected axis has 17 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 17 elements, new values have 14 elements
+2022-12-25 20:28:48 INFO     Extract Data source type is: Media
+2022-12-25 20:28:54 INFO     Load Data distination type is: Flatfile
+2022-12-25 20:35:46 INFO     Extract Data source type is: Media
+2022-12-25 20:35:52 ERROR    Length mismatch: Expected axis has 18 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail_status',    "tail_movement", "tail_movement\n _time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 18 elements, new values have 14 elements
+2022-12-25 20:36:36 INFO     Extract Data source type is: Media
+2022-12-25 20:36:42 ERROR    Length mismatch: Expected axis has 18 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail_status',    "tail_movement", "tail_movement\n_time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 18 elements, new values have 14 elements
+2022-12-25 20:37:36 INFO     Extract Data source type is: Media
+2022-12-25 20:37:42 INFO     Load Data distination type is: Flatfile
