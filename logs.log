@@ -2405,3 +2405,32 @@ AttributeError: 'NoneType' object has no attribute 'columns'
 =======
 >>>>>>> 2d0ebe6fad8b4febe89d9c7bdb5b629ffb68dfc0
 >>>>>>> b41d86811e1a65a32c836d8cbeda051a2f39bb5b
+2022-12-25 19:06:27 INFO     Extract Data source type is: Media
+2022-12-25 19:06:27 ERROR    "None of ['Time'] are in the columns"
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 216, in data_frame
+    export_details = pd.DataFrame(change).set_index("Time")
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\frame.py", line 5451, in set_index
+    raise KeyError(f"None of {missing} are in the columns")
+KeyError: "None of ['Time'] are in the columns"
+2022-12-25 19:07:57 INFO     Extract Data source type is: Media
+2022-12-25 19:07:57 INFO     Load Data distination type is: Flatfile
+2022-12-25 19:11:11 INFO     Extract Data source type is: Media
+2022-12-25 19:11:16 INFO     Load Data distination type is: Flatfile

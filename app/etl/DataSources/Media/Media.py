@@ -6,7 +6,7 @@ class Media(IDataSource):
     def __init__(self, type:EMedia) -> None:
         super().__init__(type)
         self.extractCallbacks = {
-            EMedia.VIDEO: (lambda path: print('not implemented')),
+            EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
             EMedia.IMAGE: (lambda path: print('not implemented') ),
             EMedia.FRAMES: (lambda path: BirdMoveDetect().get_changes(path)),
         }

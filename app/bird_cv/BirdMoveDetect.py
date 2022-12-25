@@ -26,10 +26,12 @@ class BirdMoveDetect:
 
     def get_changes(self, framesPath):
         motion = ClsMotion()
-        changes_arr = motion.process_videos(framesPath) 
+        changes_arr = motion.process_frames(framesPath) 
+        return changes_arr
 
-        #changes_converted = self.convert_to_pd(changes_arr)
-        #changes_converted = changes_converted.reset_index(drop=True)
+    def get_changes_for_video(self, video_path):
+        motion = ClsMotion()
+        changes_arr = motion.process_videos(video_path) 
         return changes_arr
 
     def convert_to_pd(self, bird_dict):
