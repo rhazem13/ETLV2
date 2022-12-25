@@ -21,6 +21,7 @@ class DataSourceFactory():
             EFlatfile.EXCEL:(lambda : Flatfile(EFlatfile.EXCEL)),
             EMedia.VIDEO:(lambda : Media(EMedia.VIDEO)),
             EMedia.IMAGE:(lambda : Media(EMedia.IMAGE)),
+            EMedia.FRAMES:(lambda : Media(EMedia.FRAMES)),
             EConsoleTypes.STDOUT:(lambda: Console(EConsoleTypes.STDOUT)),
             EConsoleTypes.CUSTOM:(lambda: Console(EConsoleTypes.CUSTOM))
         }
@@ -45,6 +46,8 @@ class DataSourceFactory():
             return EFlatfile.EXCEL
         elif(T=='video'):
             return EMedia.VIDEO
+        elif(T=='frames'):
+            return EMedia.FRAMES
         elif(T=='img'):
             return EMedia.IMAGE
         elif (T == 'stdout'):
