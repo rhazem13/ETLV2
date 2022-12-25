@@ -2434,6 +2434,7 @@ KeyError: "None of ['Time'] are in the columns"
 2022-12-25 19:07:57 INFO     Load Data distination type is: Flatfile
 2022-12-25 19:11:11 INFO     Extract Data source type is: Media
 2022-12-25 19:11:16 INFO     Load Data distination type is: Flatfile
+<<<<<<< HEAD
 2022-12-25 20:01:15 INFO     Extract Data source type is: Media
 2022-12-25 20:01:20 INFO     Load Data distination type is: Flatfile
 2022-12-25 20:02:04 INFO     Extract Data source type is: Media
@@ -2692,3 +2693,219 @@ Traceback (most recent call last):
   File "C:\Users\rhaze\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\internals\base.py", line 57, in _validate_set_axis
     raise ValueError(
 ValueError: Length mismatch: Expected axis has 26 elements, new values have 14 elements
+=======
+2022-12-25 20:23:57 INFO     Extract Data source type is: Media
+2022-12-25 20:24:03 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:24:12 INFO     Extract Data source type is: Media
+2022-12-25 20:24:18 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:26:30 INFO     Extract Data source type is: Media
+2022-12-25 20:26:36 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:26:41 INFO     Extract Data source type is: Media
+2022-12-25 20:26:47 ERROR    Length mismatch: Expected axis has 15 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 15 elements, new values have 14 elements
+2022-12-25 20:27:47 INFO     Extract Data source type is: Media
+2022-12-25 20:27:53 ERROR    Length mismatch: Expected axis has 17 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail status',    "tail movement", "tail movement\n  time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 17 elements, new values have 14 elements
+2022-12-25 20:28:48 INFO     Extract Data source type is: Media
+2022-12-25 20:28:54 INFO     Load Data distination type is: Flatfile
+2022-12-25 20:35:46 INFO     Extract Data source type is: Media
+2022-12-25 20:35:52 ERROR    Length mismatch: Expected axis has 18 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail_status',    "tail_movement", "tail_movement\n _time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 18 elements, new values have 14 elements
+2022-12-25 20:36:36 INFO     Extract Data source type is: Media
+2022-12-25 20:36:42 ERROR    Length mismatch: Expected axis has 18 elements, new values have 14 elements
+Traceback (most recent call last):
+  File "D:\sharaf\ETLV2\app\Controllers\controllers.py", line 26, in execute
+    exec(str(code))
+  File "<string>", line 3, in <module>
+  File "D:\sharaf\ETLV2\app\etl\core.py", line 12, in extract
+    data = data_source.extract(file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 14, in extract
+    data = self.extractCallbacks[self.type](file_path)
+  File "D:\sharaf\ETLV2\app\etl\DataSources\Media\Media.py", line 9, in <lambda>
+    EMedia.VIDEO: (lambda path: BirdMoveDetect().get_changes_for_video(path)),
+  File "D:\sharaf\ETLV2\app\bird_cv\BirdMoveDetect.py", line 34, in get_changes_for_video
+    changes_arr = motion.process_videos(video_path)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 56, in process_videos
+    return self.get_motion_per_time(dict_frame_time)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 160, in get_motion_per_time
+    return self.data_frame(dict_frame_time, tbl_movement)
+  File "D:\sharaf\ETLV2\app\bird_cv\motionDetection\motionv2.py", line 225, in data_frame
+    'tail_status',    "tail_movement", "tail_movement\n_time span"]
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 5500, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Users\server\anaconda3\envs\tf\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 18 elements, new values have 14 elements
+2022-12-25 20:37:36 INFO     Extract Data source type is: Media
+2022-12-25 20:37:42 INFO     Load Data distination type is: Flatfile
+>>>>>>> 560f51f6244826d63ad8cabba1d3e39b4060a1c6
